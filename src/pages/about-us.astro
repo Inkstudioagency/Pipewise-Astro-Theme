@@ -1,0 +1,38 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Cta from '@/components/shared/Cta.astro';
+import HeroVideo from '@/components/sections/about/HeroVideo.astro';
+import HeroOverlay from '@/components/sections/shared/HeroOverlay.astro';
+import Hero from '@/components/sections/about/Hero.astro';
+import Overview from '@/components/sections/about/Overview.astro';
+import Story from '@/components/sections/about/Story.astro';
+import Beliefs from '@/components/sections/about/Beliefs.astro';
+import Values from '@/components/sections/about/Values.astro';
+import Team from '@/components/sections/about/Team.astro';
+import Testimonials from '@/components/sections/about/Testimonials.astro';
+import Faq from '@/components/sections/shared/Faq.astro';
+
+const WF_PAGE = '6ab66a3222c68280e106041a';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="About Us - Pipewise" description="Meet the team behind Pipewise, the plumbing Astro theme — company values, a short history and the standards every engineer is held to on site.">
+  <div class="about-hero-area">
+    <HeroVideo />
+    <Header id="navbar" />
+    <HeroOverlay />
+    <Hero />
+  </div>
+  <div class="main">
+    <Overview />
+    <Story />
+    <Beliefs />
+    <Values />
+    <Team />
+    <Testimonials />
+    <Cta />
+    <Faq />
+    <Footer wfPage={WF_PAGE} backToTop="#top" />
+  </div>
+</BaseLayout>

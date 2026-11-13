@@ -1,0 +1,27 @@
+---
+import DynList from '@/components/cms/DynList.astro';
+import ProjectRowCard from '@/components/cards/ProjectRowCard.astro';
+import { getProjects } from '@/lib/content';
+const projects = await getProjects();
+---
+
+<section id="top" class="section body-color">
+        <div class="section-gap">
+          <div class="container">
+            <div class="section-center-wrap">
+              <div class="section-header">
+                <div class="section-badge">
+                  <div>Explore Our Work</div>
+                </div>
+                <div class="max-width-37">
+                  <h2 class="section-heading center">From Quick Repairs to Complete Upgrades.</h2>
+                </div>
+                <div class="max-width-37">
+                  <p class="font-regular center">Check out the plumbing projects we&#x27;ve successfully completed for both homeowners and businesses in the region.</p>
+                </div>
+              </div>
+              <DynList items={projects} class="collection-full-wrap" itemsClass="project-row-list" itemClass="project-collection-item">{(project: any) => <ProjectRowCard project={project} />}</DynList>
+            </div>
+          </div>
+        </div>
+      </section>

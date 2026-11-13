@@ -1,0 +1,38 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Cta from '@/components/shared/Cta.astro';
+import Hero from '@/components/sections/home-v3/Hero.astro';
+import About from '@/components/sections/home-v3/About.astro';
+import Services from '@/components/sections/home-v3/Services.astro';
+import WhyChooseUs from '@/components/sections/home-v3/WhyChooseUs.astro';
+import HowItWorks from '@/components/sections/home-v3/HowItWorks.astro';
+import Membership from '@/components/sections/home-v3/Membership.astro';
+import Projects from '@/components/sections/home-v3/Projects.astro';
+import ServiceArea from '@/components/sections/home-v3/ServiceArea.astro';
+import Blog from '@/components/sections/home-v3/Blog.astro';
+import Testimonials from '@/components/sections/home-v3/Testimonials.astro';
+import Faq from '@/components/sections/home-v3/Faq.astro';
+
+const WF_PAGE = '6ab509dc1863d23effc8b461';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Pipewise - Plumbing Astro Theme" description="The third homepage layout in the Pipewise Astro theme, built around a service-area map, a case-study slider and a membership plan comparison.">
+  <Header variant="v2" id="nav-top" />
+  <Hero />
+  <div class="main">
+    <About />
+    <Services />
+    <WhyChooseUs />
+    <HowItWorks />
+    <Membership />
+    <Projects />
+    <ServiceArea />
+    <Blog />
+    <Testimonials />
+    <Faq />
+    <Cta />
+  </div>
+  <Footer wfPage={WF_PAGE} backToTop="#nav-top" />
+</BaseLayout>

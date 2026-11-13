@@ -1,0 +1,62 @@
+---
+import DynList from '@/components/cms/DynList.astro';
+import BlogFeaturedCard from '@/components/cards/BlogFeaturedCard.astro';
+import BlogCardV2 from '@/components/cards/BlogCardV2.astro';
+import BlogSlideCard from '@/components/cards/BlogSlideCard.astro';
+import { getBlogs, getBlogsByDate, getFeaturedBlog } from '@/lib/content';
+const featured = await getFeaturedBlog();
+const latest = (await getBlogsByDate()).slice(0, 3);
+const blogs = await getBlogs();
+---
+
+<section class="section">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="blog-header-top">
+              <div class="section-header left">
+                <div class="section-badge">
+                  <div>Plumbing Insights</div>
+                </div>
+                <div class="max-width-37">
+                  <h2 class="section-heading">Helpful Tips for a Healthier Home.</h2>
+                </div>
+              </div>
+              <a to-top-0="" href="/blog" class="blog-button w-inline-block">
+                <div class="blog-button-item">
+                  <div>All Articles</div>
+                  <div class="button-arrow-wrap"><svg fill="none" viewBox="0 0 18 18" width="100%" xmlns="http://www.w3.org/2000/svg" class="button-arrow">
+                      <path fill="currentColor" d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z"></path>
+                    </svg><svg fill="none" viewBox="0 0 18 18" width="100%" xmlns="http://www.w3.org/2000/svg" class="button-arrow">
+                      <path fill="currentColor" d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z"></path>
+                    </svg></div>
+                </div>
+                <div class="button-animated-line"></div>
+              </a>
+            </div>
+            <div class="blog-wrap">
+              <DynList items={featured ? [featured] : []}>{(blog: any) => <BlogFeaturedCard blog={blog} />}</DynList>
+              <DynList items={latest} itemsClass="blog-grid">{(blog: any) => <BlogCardV2 blog={blog} />}</DynList>
+            </div>
+            <div data-delay="4000" data-animation="slide" class="blog-slider w-slider" data-autoplay="false" to-top-0="" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+              <div class="w-slider-mask">
+                <div class="blog-slide w-slide">
+                  <DynList items={blogs.slice(0, 1)}>{(blog: any) => <BlogSlideCard blog={blog} />}</DynList>
+                </div>
+                <div class="blog-slide w-slide">
+                  <DynList items={blogs.slice(1, 2)}>{(blog: any) => <BlogSlideCard blog={blog} />}</DynList>
+                </div>
+                <div class="blog-slide w-slide">
+                  <DynList items={blogs.slice(2, 3)}>{(blog: any) => <BlogSlideCard blog={blog} />}</DynList>
+                </div>
+              </div>
+              <div class="blog-slider-button left w-slider-arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="slider-arrow">
+                  <path d="M10.3385 17.9011C10.3385 17.9011 5.04862 13.3787 5.04858 11.9969C5.04861 10.6151 10.3386 6.09284 10.3386 6.09284M5.63604 11.9969L19.7782 11.9969" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+              <div class="blog-slider-button right w-slider-arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="slider-arrow">
+                  <path d="M13.6615 6.09504C13.6615 6.09504 18.9514 10.6174 18.9514 11.9992C18.9514 13.381 13.6614 17.9033 13.6614 17.9033M18.364 11.9992L4.22183 11.9992" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+              <div class="hide w-slider-nav w-round w-num"></div>
+            </div>
+          </div>
+        </div>
+      </section>

@@ -1,0 +1,33 @@
+---
+import type { Service } from '@/lib/content';
+
+interface Props {
+  service: Service;
+}
+
+const { service } = Astro.props;
+const href = `/services/${service.slug}`;
+---
+
+<div to-top-0="" class="service-card related">
+  <a href={href} class="releted-service-image-wrap w-inline-block"><img src={service.mainImage.url} parallax="" class="service-card-image related" alt={service.mainImage.alt} srcset={service.mainImage.srcset ?? undefined} sizes={service.mainImage.srcset ? '100vw' : undefined}>
+    <div class="demo">#</div>
+  </a>
+  <div class="service-card-item related">
+    <div class="service-card-top related">
+      <p class="service-card-title related">{service.name}</p>
+      <p class="service-card-summary related">{service.shortDescription}</p>
+    </div>
+    <a href={href} class="blog-button w-inline-block">
+      <div class="blog-button-item home-hero">
+        <div>View Details</div>
+        <div class="button-arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 18 18" fill="none" class="button-arrow">
+            <path d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z" fill="currentColor"></path>
+          </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 18 18" fill="none" class="button-arrow">
+            <path d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z" fill="currentColor"></path>
+          </svg></div>
+      </div>
+      <div class="button-animated-line"></div>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+---
+import DynList from '@/components/cms/DynList.astro';
+import ProjectCardV3 from '@/components/cards/ProjectCardV3.astro';
+import { getProjects } from '@/lib/content';
+const projects = await getProjects();
+---
+
+<section class="section white-50">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="case-wrap-v3">
+              <div class="case-header-v3">
+                <div class="section-header left">
+                  <h2 class="section-heading case-v3">Take a look at some of the plumbing projects our team has completed for homes and businesses across the area.</h2>
+                </div>
+                <div class="case-header-button-v3">
+                  <div to-top-0="">
+                    <a href="/project-v1" data-wf--primary-btn--variant="base" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="base" class="primary-button w-inline-block">
+                      <div class="button-text-wrapper">
+                        <div class="footer-link-text is-one">All Case Study</div>
+                        <div class="footer-link-text is-two">All Case Study</div>
+                      </div>
+                      <div class="arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="pricng-arrow">
+                          <path d="M13.6615 6.09504C13.6615 6.09504 18.9514 10.6174 18.9514 11.9992C18.9514 13.381 13.6614 17.9033 13.6614 17.9033M18.364 11.9992L4.22183 11.9992" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="pricng-arrow">
+                          <path d="M13.6615 6.09504C13.6615 6.09504 18.9514 10.6174 18.9514 11.9992C18.9514 13.381 13.6614 17.9033 13.6614 17.9033M18.364 11.9992L4.22183 11.9992" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div to-top-0="" class="case-row-v3">
+                <div class="case-left-v3">
+                  <p to-top-0="" class="font-normal v3">Real issues, real solutions!</p>
+                </div>
+                <div data-delay="4000" data-animation="slide" class="project-slider v3 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                  <div class="project-slider-mask v3 w-slider-mask">
+                    <div class="case-slide-v3 w-slide">
+                      <DynList items={projects.slice(0, 1)}>{(project: any) => <ProjectCardV3 project={project} />}</DynList>
+                    </div>
+                    <div class="case-slide-v3 w-slide">
+                      <DynList items={projects.slice(1, 2)}>{(project: any) => <ProjectCardV3 project={project} />}</DynList>
+                    </div>
+                    <div class="case-slide-v3 w-slide">
+                      <DynList items={projects.slice(2, 3)}>{(project: any) => <ProjectCardV3 project={project} />}</DynList>
+                    </div>
+                  </div>
+                  <div class="case-slider-arrow-v3 w-slider-arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="slider-arrow">
+                      <path d="M10.3385 17.9011C10.3385 17.9011 5.04862 13.3787 5.04858 11.9969C5.04861 10.6151 10.3386 6.09284 10.3386 6.09284M5.63604 11.9969L19.7782 11.9969" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></div>
+                  <div class="case-slider-arrow-v3 right w-slider-arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="slider-arrow">
+                      <path d="M13.6615 6.09504C13.6615 6.09504 18.9514 10.6174 18.9514 11.9992C18.9514 13.381 13.6614 17.9033 13.6614 17.9033M18.364 11.9992L4.22183 11.9992" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></div>
+                  <div class="case-slider-nav-v3 w-slider-nav w-round w-num"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

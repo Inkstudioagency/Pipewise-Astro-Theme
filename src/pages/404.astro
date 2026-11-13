@@ -1,0 +1,18 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Cta from '@/components/shared/Cta.astro';
+import NotFound from '@/components/sections/not-found/NotFound.astro';
+
+const WF_PAGE = '6ab21d1467875e4895e71fe2';
+---
+
+<BaseLayout wfPage={WF_PAGE} noindex title="404 - Pipewise" description="This page could not be found. Use the navigation to get back to the Pipewise Astro theme home page, services, projects or contact details.">
+  <Header variant="v2" menu="details" />
+  <div class="main">
+    <NotFound />
+    <Cta />
+  </div>
+  <Footer wfPage={WF_PAGE} backToTop="#Hero" />
+</BaseLayout>

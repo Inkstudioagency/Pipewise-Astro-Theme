@@ -1,0 +1,50 @@
+---
+import type { Project } from '@/lib/content';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+const href = `/projects/${project.slug}`;
+---
+
+<div class="project-card row-v3">
+  <div class="project-row-content v3">
+    <div class="project-card-top">
+      <div class="project-meta-list row">
+        <div class="project-meta-item"><svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="project-meta-icon">
+            <path stroke-linejoin="round" stroke-width="1.2" stroke="currentColor" d="M10.6654 1.99805C12.1381 1.99805 13.332 3.19199 13.332 4.66471C13.332 6.13743 12.1381 7.33138 10.6654 7.33138C10.3286 7.33138 10.0064 7.26905 9.70964 7.15496L8.4707 8.39388L9.16341 9.08659L8.22065 10.0294L7.52794 9.33664L4.47204 12.3925C3.94134 12.9232 3.08112 12.9232 2.55042 12.3925C2.01972 11.8618 2.01972 11.0016 2.55042 10.4709L5.60632 7.41499L4.91361 6.72228L5.85637 5.77952L6.54908 6.47223L7.78801 5.2333C7.67392 4.93653 7.61159 4.61432 7.61159 4.27756C7.61159 2.80484 8.80553 1.61089 10.2783 1.61089L10.6654 1.99805Z"></path>
+          </svg>
+          <p class="font-small">{project.serviceType}</p>
+        </div>
+        <div class="project-meta-item"><svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="project-meta-icon">
+            <path stroke-linejoin="round" stroke-width="1.2" stroke="currentColor" d="M2 6.66667L8 2L14 6.66667V13.3333C14 13.7015 13.7015 14 13.3333 14H2.66667C2.29848 14 2 13.7015 2 13.3333V6.66667Z"></path>
+            <path stroke-linejoin="round" stroke-width="1.2" stroke="currentColor" d="M6 14V9H10V14"></path>
+          </svg>
+          <p class="font-small">{project.propertyType}</p>
+        </div>
+      </div>
+      <div class="project-title black-rock">{project.name}</div>
+    </div>
+    <div class="project-row-top v3">
+      <div class="project-row-head-v3">
+        <p class="font-regular">{project.shortDescription}</p>
+        <a href={href} class="blog-button w-inline-block">
+          <div class="blog-button-item">
+            <div>View Case Study</div>
+            <div class="button-arrow-wrap"><svg width="100%" fill="none" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="button-arrow">
+                <path d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z" fill="currentColor"></path>
+              </svg><svg width="100%" fill="none" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="button-arrow">
+                <path d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z" fill="currentColor"></path>
+              </svg></div>
+          </div>
+          <div class="button-animated-line"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <a href={href} class="project-row-media v3 w-inline-block"><img src={project.image.url} loading="lazy" parallax="" class="project-card-image" alt={project.image.alt} srcset={project.image.srcset ?? undefined} sizes={project.image.srcset ? '100vw' : undefined}>
+    <div class="demo">#</div>
+  </a>
+</div>

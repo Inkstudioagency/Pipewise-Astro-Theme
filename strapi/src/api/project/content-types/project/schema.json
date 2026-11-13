@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": "Case studies: /projects/[slug], the three project list pages and the home page sliders"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "shortDescription": {
+      "type": "text",
+      "required": true
+    },
+    "longTitle": {
+      "type": "text",
+      "required": true
+    },
+    "serviceType": {
+      "type": "string",
+      "required": true
+    },
+    "propertyType": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "duration": {
+      "type": "string",
+      "required": true
+    },
+    "projectStatus": {
+      "type": "string",
+      "required": true
+    },
+    "overview": {
+      "type": "blocks"
+    },
+    "pipesReplaced": {
+      "type": "string"
+    },
+    "projectCompleted": {
+      "type": "string"
+    },
+    "improvedWaterFlow": {
+      "type": "string"
+    },
+    "activeLeaks": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+---
+import type { Project } from '@/lib/content';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+const href = `/projects/${project.slug}`;
+---
+
+<div to-top-0="" class="project-card card-v2">
+  <a href={href} class="project-row-media-v2 w-inline-block"><img src={project.image.url} loading="lazy" parallax="" class="project-card-image-v2" alt={project.image.alt} srcset={project.image.srcset ?? undefined} sizes={project.image.srcset ? '100vw' : undefined}>
+    <div class="demo">#</div>
+  </a>
+  <div class="project-row-content">
+    <div class="project-row-top">
+      <div class="project-row-head">
+        <div class="project-card-title">{project.name}</div>
+        <p class="font-regular">{project.shortDescription}</p>
+      </div>
+      <div class="project-meta-list">
+        <div class="project-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="project-meta-icon">
+            <path d="M8 14C5.17157 14 3.75736 14 2.87868 13.1213C2 12.2427 2 10.8284 2 8C2 5.17157 2 3.75736 2.87868 2.87868C3.75736 2 5.17157 2 8 2C10.8284 2 12.2427 2 13.1213 2.87868C14 3.75736 14 5.17157 14 8" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"></path>
+            <path d="M8 2V14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M14.0006 7.99609H2.00391" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M10.666 13.1113C10.666 13.1113 11.166 13.1113 11.666 14.0002C11.666 14.0002 13.2543 11.778 14.666 11.3335" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <p class="font-small">{project.serviceType}</p>
+        </div>
+        <div class="project-meta-item"><svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="project-meta-icon">
+            <path stroke-linejoin="round" stroke-width="1.2" stroke="currentColor" d="M2 6.66667L8 2L14 6.66667V13.3333C14 13.7015 13.7015 14 13.3333 14H2.66667C2.29848 14 2 13.7015 2 13.3333V6.66667Z"></path>
+            <path stroke-linejoin="round" stroke-width="1.2" stroke="currentColor" d="M6 14V9H10V14"></path>
+          </svg>
+          <p class="font-small">{project.propertyType}</p>
+        </div>
+      </div>
+    </div>
+    <a href={href} data-wf--primary-btn--variant="base" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="base" class="primary-button w-inline-block">
+      <div class="button-text-wrapper">
+        <div class="footer-link-text is-one">View Case Study</div>
+        <div class="footer-link-text is-two">View Case Study</div>
+      </div>
+    </a>
+  </div>
+</div>

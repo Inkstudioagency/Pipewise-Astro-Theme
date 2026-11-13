@@ -1,0 +1,98 @@
+---
+import RichText from '@/components/RichText.astro';
+import type { Project } from '@/lib/content';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+---
+
+<section class="section white-100">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="w-layout-grid project-details-grid">
+              <div class="project-left-main">
+                <div to-top-0="" class="project-left">
+                  <div class="project-table-top">
+                    <div class="font-normal">Project Info</div>
+                  </div>
+                  <div class="project-info-list-wrap">
+                    <div class="project-list">
+                      <div class="font-regular brand-color">Service</div>
+                      <div class="project-text-wrap">
+                        <div class="font-regular brand-color medium">{project.serviceType}</div>
+                      </div>
+                    </div>
+                    <div class="project-list">
+                      <div class="font-regular brand-color">Project Type</div>
+                      <div class="project-text-wrap">
+                        <div class="font-regular brand-color medium">{project.propertyType}</div>
+                      </div>
+                    </div>
+                    <div class="project-list">
+                      <div class="font-regular brand-color">Location</div>
+                      <div class="project-text-wrap">
+                        <div class="font-regular brand-color medium">{project.location}</div>
+                      </div>
+                    </div>
+                    <div class="project-list">
+                      <div class="font-regular brand-color">Duration</div>
+                      <div class="project-text-wrap">
+                        <div class="font-regular brand-color medium">{project.duration}</div>
+                      </div>
+                    </div>
+                    <div class="project-list">
+                      <div class="font-regular brand-color">Status</div>
+                      <div class="project-text-wrap">
+                        <div class="font-regular brand-color medium">{project.status}</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-button-wrap">
+                    <a href="/contact-v1" data-wf--primary-btn--variant="base" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="base" class="primary-button w-inline-block">
+                      <div class="button-text-wrapper">
+                        <div class="footer-link-text is-one">Book a Service</div>
+                        <div class="footer-link-text is-two">Book a Service</div>
+                      </div>
+                    </a>
+                    <a href="tel:(555)014-2200" class="home-hero-button project w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="phone-icon">
+                        <path d="M6.10575 3.80815L5.83731 3.20417C5.66179 2.80925 5.57403 2.61179 5.44278 2.46067C5.2783 2.27129 5.06389 2.13196 4.82403 2.05857C4.63264 2 4.41655 2 3.98438 2C3.35218 2 3.03608 2 2.77073 2.12153C2.45816 2.26468 2.17587 2.57552 2.0634 2.9004C1.96792 3.17619 1.99527 3.45962 2.04996 4.02647C2.63218 10.0601 5.94012 13.368 11.9737 13.9503C12.5406 14.005 12.8241 14.0323 13.0998 13.9368C13.4247 13.8244 13.7356 13.5421 13.8788 13.2295C14.0002 12.9642 14.0002 12.648 14.0002 12.0158C14.0002 11.5837 14.0002 11.3676 13.9417 11.1762C13.8683 10.9364 13.7289 10.722 13.5395 10.5574C13.3885 10.4262 13.191 10.3384 12.7961 10.1629L12.1921 9.89451C11.7644 9.70444 11.5505 9.60937 11.3333 9.58871C11.1253 9.56891 10.9156 9.59811 10.7209 9.67391C10.5175 9.75311 10.3378 9.90291 9.97822 10.2026C9.62035 10.5008 9.44142 10.6499 9.22275 10.7298C9.02888 10.8006 8.77262 10.8268 8.56848 10.7968C8.33815 10.7628 8.16182 10.6686 7.80908 10.4801C6.71175 9.89364 6.1066 9.28851 5.52016 8.19117C5.33167 7.83844 5.23743 7.66211 5.20349 7.43177C5.1734 7.22764 5.19963 6.97137 5.27044 6.77751C5.35032 6.55885 5.49945 6.37991 5.7977 6.022C6.09732 5.66245 6.24714 5.48268 6.32634 5.27927C6.40214 5.08463 6.43132 4.87493 6.41154 4.66699C6.39087 4.44968 6.29583 4.23584 6.10575 3.80815Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path>
+                      </svg>
+                      <div class="button-text-wrapper">
+                        <div class="footer-link-text is-one">(555) 014-2200</div>
+                        <div class="footer-link-text is-two">(555) 014-2200</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-details-right">
+                <div to-top-0="" class="section-badge">
+                  <div>Project Overview</div>
+                </div>
+                <RichText to-top-0="" class="project-details" blocks={project.overview} />
+                <div class="w-layout-grid project-stats-grid">
+                  <div to-top-0="" class="project-stats-card">
+                    <div data-counter="counter" class="font-large">{project.stats.pipesReplaced}</div>
+                    <div class="font-regular">Pipes Replaced</div>
+                  </div>
+                  <div to-top-2="" class="project-stats-card">
+                    <div data-counter="counter" class="font-large">{project.stats.projectCompleted}</div>
+                    <div class="font-regular">Project Completed</div>
+                  </div>
+                  <div to-top-4="" class="project-stats-card">
+                    <div data-counter="counter" class="font-large">{project.stats.improvedWaterFlow}</div>
+                    <div class="font-regular">Improved Water Flow</div>
+                  </div>
+                  <div to-top-6="" class="project-stats-card">
+                    <div data-counter="counter" class="font-large">{project.stats.activeLeaks}</div>
+                    <div class="font-regular">Active Leaks</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

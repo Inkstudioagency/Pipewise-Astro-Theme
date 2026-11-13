@@ -1,0 +1,35 @@
+---
+import DynList from '@/components/cms/DynList.astro';
+import BlogCardV3 from '@/components/cards/BlogCardV3.astro';
+import { getBlogs } from '@/lib/content';
+const blogs = (await getBlogs()).slice(2, 4);
+---
+
+<section class="section white-50">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="blog-header-top">
+              <div class="section-header blog">
+                <div class="section-badge">
+                  <div>Plumbing Insights</div>
+                </div>
+                <h2 class="section-heading blog-v3">Helpful Tips for a Healthier Home.</h2>
+              </div>
+              <a to-top-2="" href="/blog" class="blog-button w-inline-block">
+                <div class="blog-button-item">
+                  <div>All Articles</div>
+                  <div class="button-arrow-wrap"><svg fill="none" viewBox="0 0 18 18" width="100%" xmlns="http://www.w3.org/2000/svg" class="button-arrow">
+                      <path fill="currentColor" d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z"></path>
+                    </svg><svg fill="none" viewBox="0 0 18 18" width="100%" xmlns="http://www.w3.org/2000/svg" class="button-arrow">
+                      <path fill="currentColor" d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z"></path>
+                    </svg></div>
+                </div>
+                <div class="button-animated-line"></div>
+              </a>
+            </div>
+            <div class="blog-collection-wrap">
+              <DynList items={blogs} itemsClass="blog-collection-list">{(blog: any) => <BlogCardV3 blog={blog} />}</DynList>
+            </div>
+          </div>
+        </div>
+      </section>

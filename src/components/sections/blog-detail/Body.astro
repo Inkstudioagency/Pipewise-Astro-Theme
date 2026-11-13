@@ -1,0 +1,38 @@
+---
+import RichText from '@/components/RichText.astro';
+import type { Blog } from '@/lib/content';
+
+interface Props {
+  blog: Blog;
+}
+
+const { blog } = Astro.props;
+---
+
+<section class="section white-100">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="post-body-wrap">
+              <div to-top-0="" class="post-short-summary">{blog.summary}</div>
+              <RichText to-top-0="" class="post-body-content" blocks={blog.content} />
+              <div to-top-0="" class="psot-bottom">
+                <div class="post-bottom-left">
+                  <div class="post-logo-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 18 24" fill="none" class="logo">
+                      <path d="M15.5168 11.692H18V0H15.5168V11.692ZM2.05976 19.7452H10.3675V21.8726H12.4272V24H0V21.8726H2.05976V19.7452ZM2.05976 17.6177V7.97341C2.05976 3.86812 5.36286 0.527422 9.33757 0.527422H13.4571V11.1645H10.3675V17.6177H2.05976Z" fill="currentColor"></path>
+                    </svg></div>
+                  <div class="brand-details-group">
+                    <div class="font-regular brand-color medium">Pipewise Team</div>
+                    <div>Field notes from licensed technicians</div>
+                  </div>
+                </div>
+                <a href="/contact-v1" data-wf--primary-btn--variant="base" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="base" class="primary-button w-inline-block">
+                  <div class="button-text-wrapper">
+                    <div class="footer-link-text is-one">Book a Service</div>
+                    <div class="footer-link-text is-two">Book a Service</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

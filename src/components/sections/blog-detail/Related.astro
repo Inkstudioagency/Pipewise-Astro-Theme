@@ -1,0 +1,36 @@
+---
+import DynList from '@/components/cms/DynList.astro';
+import BlogGridCard from '@/components/cards/BlogGridCard.astro';
+import { getRelatedBlogs } from '@/lib/content';
+interface Props {
+  /** Slug of the current article (left out of the list) */
+  slug: string;
+}
+
+const blogs = await getRelatedBlogs(Astro.props.slug);
+---
+
+<section class="section">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="how-work-header">
+              <div class="section-header left">
+                <div class="max-width-37">
+                  <h2 class="section-heading">Related Articles</h2>
+                </div>
+              </div>
+              <div to-top-0="" class="max-width-17">
+                <a href="/blog" data-wf--primary-btn--variant="base" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="base" class="primary-button w-inline-block">
+                  <div class="button-text-wrapper">
+                    <div class="footer-link-text is-one">All Articles</div>
+                    <div class="footer-link-text is-two">All Articles</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="releted-post-collection-wrap">
+              <DynList items={blogs} class="collection-full-wrap" itemsClass="blog-grid">{(blog: any) => <BlogGridCard blog={blog} />}</DynList>
+            </div>
+          </div>
+        </div>
+      </section>

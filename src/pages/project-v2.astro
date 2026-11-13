@@ -1,0 +1,20 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Cta from '@/components/shared/Cta.astro';
+import Hero from '@/components/sections/project-v2/Hero.astro';
+import ProjectList from '@/components/sections/project-v2/ProjectList.astro';
+
+const WF_PAGE = '6ab64f252c45567158e70929';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Project V2 - Pipewise" description="A two-column project layout for the Pipewise Astro theme, showing repairs, installations, drain upgrades and whole-home repipes side by side.">
+  <Header variant="v2" id="nav-top" />
+  <div class="main">
+    <Hero />
+    <ProjectList />
+    <Cta />
+  </div>
+  <Footer wfPage={WF_PAGE} backToTop="#nav-top" />
+</BaseLayout>

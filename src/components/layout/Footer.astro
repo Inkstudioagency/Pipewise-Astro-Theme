@@ -1,0 +1,80 @@
+---
+/**
+ * Site footer: brand, newsletter form, link columns, wordmark and copyright.
+ * Link columns come from src/config/menu.json ("$latest-*" links point to the newest
+ * Strapi entry of a collection), texts from src/config/config.json.
+ */
+import config from '@/config/config.json';
+import menu from '@/config/menu.json';
+import { resolveLink } from '@/lib/content';
+import { currentLink } from '@/lib/webflow';
+
+interface Props {
+  /** Webflow page id of the current page (the newsletter form references it) */
+  wfPage: string;
+  /** Target of the "Back to top" link, e.g. "#top" or the id of the header */
+  backToTop?: string;
+}
+
+const { wfPage, backToTop = '#top' } = Astro.props;
+const { footer } = config;
+const year = new Date().getFullYear();
+const columns = await Promise.all(
+  menu.footer.map(async (column) => ({
+    ...column,
+    links: await Promise.all(column.links.map(async (l) => ({ ...l, url: await resolveLink(l.url) }))),
+  })),
+);
+const link = (href: string) => currentLink(href, Astro.url.pathname, 'footer-link w-inline-block');
+---
+
+<section class="section footer">
+  <div class="section-gap footer">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="w-layout-grid footer-grid">
+        <div to-top-0="" class="footer-left">
+          <a {...currentLink('/', Astro.url.pathname, 'footer-brand-link w-inline-block')}><img loading="lazy" src="/images/Link-1.webp" alt="Pipewise logo with a stylized pipe icon inside a yellow rounded square followed by the word 'Pipewise' in white text." sizes="100vw" srcset="/images/Link-1-p-500.webp 500w, /images/Link-1-p-800.png 800w, /images/Link-1.webp 801w" class="footer-brand-logo"></a>
+          <div class="max-width-17">
+            <p class="font-regular white-80">{footer.summary}</p>
+          </div>
+          <div class="footer-form-main w-form">
+            <form id="wf-form-Subscribe-From" name="wf-form-Subscribe-From" data-name="Subscribe From" method="get" class="footer-form" data-wf-page-id={wfPage} data-wf-element-id="08ab7fed-347a-6f1c-8392-8da2bd93e7e6"><input class="footer-form-field w-input" maxlength="256" name="Subscribe-Email" data-name="Subscribe Email" aria-label="email" placeholder="Email address" type="email" id="Subscribe-Email" required=""><input type="submit" data-wait="Please wait..." class="footer-submit-button w-button" value="Subscribe"></form>
+            <div class="success-message w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="error-message w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+        <div to-top-2="" class="footer-right">
+          {columns.map((column) => (
+            <div class="footer-menu-main">
+              <div class="footer-menut-text">{column.title}</div>
+              <div class="footer-menue">
+                {column.links.map((item) => (
+                  <a {...link(item.url)} target={'external' in item && item.external ? '_blank' : undefined}>
+                    <div class="footer-text is-one">{item.name}</div>
+                    <div class="footer-text is-two">{item.name}</div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div to-top-2="" class="footer-bottom"><img src="/images/Pipewise.webp" loading="lazy" sizes="100vw" srcset="/images/Pipewise-p-500.png 500w, /images/Pipewise-p-800.png 800w, /images/Pipewise-p-1080.png 1080w, /images/Pipewise-p-1600.png 1600w, /images/Pipewise-p-2000.webp 2000w, /images/Pipewise.webp 4980w" alt="Pipewise wordmark logo in white on a black background." class="footer-logo">
+        <div class="footer-absolute-bottom">
+          <div class="footer-copyright-text">© {year} {footer.copyright} — Designed by <a href={footer.designer.link} target="_blank" class="link">{footer.designer.name}</a> - Powered by <a href={footer.powered_by.link} target="_blank" class="link">{footer.powered_by.name}</a>
+          </div>
+          <div class="footer-bottom-right">
+            <a href={backToTop} class="footer-link w-inline-block">
+              <div class="footer-text is-one">Back to top ↑</div>
+              <div class="footer-text is-two">Back to top ↑</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

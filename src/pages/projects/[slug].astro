@@ -1,0 +1,39 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Cta from '@/components/shared/Cta.astro';
+import Hero from '@/components/sections/project-detail/Hero.astro';
+import Overview from '@/components/sections/project-detail/Overview.astro';
+import Gallery from '@/components/sections/project-detail/Gallery.astro';
+import Faq from '@/components/sections/project-detail/Faq.astro';
+import config from '@/config/config.json';
+import { getProjects } from '@/lib/content';
+
+export async function getStaticPaths() {
+  const projects = await getProjects();
+  return projects.map((project) => ({ params: { slug: project.slug }, props: { project } }));
+}
+
+const { project } = Astro.props;
+const WF_PAGE = '6ab6448fcdd6733ca069690b';
+---
+
+<BaseLayout
+  wfPage={WF_PAGE}
+  title={project.seo.metaTitle ?? `${project.name} - ${config.site.title}`}
+  description={project.seo.metaDescription ?? project.shortDescription}
+  image={project.image.url}
+>
+  <div class="inner-hero-area">
+    <Header id="navbar" />
+    <Hero project={project} />
+  </div>
+  <div class="main">
+    <Overview project={project} />
+    <Gallery />
+    <Faq />
+    <Cta />
+  </div>
+  <Footer wfPage={WF_PAGE} backToTop="#navbar" />
+</BaseLayout>

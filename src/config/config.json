@@ -1,0 +1,43 @@
+{
+  "site": {
+    "title": "Pipewise",
+    "base_url": "https://pipewise-astro-theme.vercel.app",
+    "trailing_slash": false
+  },
+  "metadata": {
+    "meta_title": "Pipewise - Plumbing Astro Theme",
+    "meta_description": "Pipewise is a clean Astro theme for plumbing companies, with emergency call-outs, service pages, project case studies and a booking-ready contact form.",
+    "meta_image": "/images/og-image.webp",
+    "meta_author": "Ink Studio"
+  },
+  "announcement": {
+    "text": "A few service slots remain this week",
+    "button": {
+      "label": "Reserve your spot →",
+      "link": "/contact-v1"
+    }
+  },
+  "contact": {
+    "phone": "(555) 014-2200",
+    "phone_link": "tel:(555)014-2200",
+    "email": "hello@example.com",
+    "address": "128 Foundry Street, Midtown",
+    "map_link": "https://www.google.com/maps/search/128+Foundry+Street,+Midtown/@42.4983741,-71.0756818,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "footer": {
+    "summary": "Licensed plumbing installation, repair and emergency service for homes and businesses.",
+    "copyright": "Pipewise",
+    "designer": { "name": "Ink Studio", "link": "https://www.inks.studio/" },
+    "powered_by": { "name": "Astro", "link": "https://astro.build" }
+  },
+  "collections": {
+    "services_page_order": [
+      "commercial-plumbing",
+      "leak-detection-repair",
+      "water-heater-services",
+      "pipe-repair-replacement",
+      "kitchen-plumbing",
+      "emergency-plumbing-services"
+    ]
+  }
+}

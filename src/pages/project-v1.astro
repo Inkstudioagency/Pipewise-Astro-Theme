@@ -1,0 +1,26 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Cta from '@/components/shared/Cta.astro';
+import HeroVideo from '@/components/sections/project-v1/HeroVideo.astro';
+import HeroOverlay from '@/components/sections/shared/HeroOverlay.astro';
+import Hero from '@/components/sections/project-v1/Hero.astro';
+import ProjectList from '@/components/sections/project-v1/ProjectList.astro';
+
+const WF_PAGE = '6ab6421e1c654965066a3f09';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Project V1 - Pipewise" description="Browse completed plumbing projects in the Pipewise Astro theme — repairs, installations, drain upgrades and whole-home repipes, with case studies.">
+  <div class="project-hero">
+    <Header id="navbar" />
+    <HeroVideo />
+    <HeroOverlay />
+    <Hero />
+  </div>
+  <div class="main">
+    <ProjectList />
+    <Cta />
+    <Footer wfPage={WF_PAGE} backToTop="#top" />
+  </div>
+</BaseLayout>

@@ -1,0 +1,42 @@
+---
+import type { Service } from '@/lib/content';
+
+interface Props {
+  service: Service;
+}
+
+const { service } = Astro.props;
+// The cards fade in with a staggered delay, four per row, like the template
+const stagger = (index: number) => ({ [`to-top-${[0, 2, 4, 6][index % 4]}`]: '' });
+---
+
+<section class="section white-100">
+  <div class="section-gap">
+    <div class="container">
+      <div class="coverage-wrap">
+        <div class="section-header">
+          <div class="section-badge">
+            <div>Emergency Services</div>
+          </div>
+          <div class="max-width-37">
+            <h2 class="section-heading coverage">{service.coverageHeading}</h2>
+          </div>
+        </div>
+        <div class="coverage-grid">
+          {service.coverage.map((item, index) => (
+            <div {...stagger(index)} class="coverage-card">
+              <div class="coverage-num-wrap">
+                <div class="coverage-dot"></div>
+                <p class="coverage-num">{String(index + 1).padStart(2, '0')}</p>
+              </div>
+              <div class="coverage-rich w-richtext">
+                <h4>{item.title}</h4>
+                <p>{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

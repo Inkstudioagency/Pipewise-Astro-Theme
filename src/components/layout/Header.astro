@@ -1,0 +1,155 @@
+---
+/**
+ * Site header: announcement bar, navigation with the "Pages" mega menu, and the mobile menu.
+ * Markup, classes and data attributes follow the template so webflow.js (public/js) keeps
+ * driving the dropdown, the mobile menu and the interactions.
+ * The "Services" column of the mega menu lists the services from Strapi.
+ */
+import config from '@/config/config.json';
+import menu from '@/config/menu.json';
+import { getServices, resolveLink } from '@/lib/content';
+import { currentLink } from '@/lib/webflow';
+
+interface Props {
+  /** "v1" (light text over a hero image or video) or "v2" (dark text on light pages) */
+  variant?: 'v1' | 'v2';
+  /** id of the header element (the footer's "Back to top" link may point to it) */
+  id?: string;
+  /** "details" swaps the Services column for links to one entry of each collection (404 page) */
+  menu?: 'default' | 'details';
+}
+
+const { variant = 'v1', id, menu: menuType = 'default' } = Astro.props;
+const { announcement, contact } = config;
+const v2 = variant === 'v2';
+const services = menuType === 'default' ? await getServices() : [];
+const link = (href: string, className: string) => currentLink(href, Astro.url.pathname, className);
+const navClass = v2 ? 'navlink-v2 w-nav-link' : 'navllink w-nav-link';
+const detailLinks = [
+  { name: 'Service Details', url: await resolveLink('$latest-service') },
+  { name: 'Project Details', url: await resolveLink('$latest-project'), blank: true },
+  { name: 'Blog Details', url: await resolveLink('$featured-blog'), blank: true },
+];
+---
+
+<div id={id} class="nav-header">
+  <div class="nav-top">
+    <div class="nav-top-item-wrap-v2">
+      <div class="nav-top-info-wrap">
+        <div class="nav-contact-text-v2-2">{announcement.text}</div>
+        <a {...link(announcement.button.link, 'varlink w-inline-block')}>
+          <div>{announcement.button.label}</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class={v2 ? 'navbar-v2 w-nav' : 'navbar-v1 w-nav'}>
+    <div class="container w-container">
+      <div class="nav-item-wrap">
+        <nav role="navigation" class="w-nav-menu">
+          <div class="nav-left">
+            <div class="navlink-wrap">
+              {menu.main.map((item) => <a {...link(item.url, navClass)}>{item.name}</a>)}
+              <div data-delay="0" data-hover="true" class="nav-dropdown w-dropdown">
+                <div class={v2 ? 'navlink-v2 w-dropdown-toggle' : 'navlink-v1 w-dropdown-toggle'}>
+                  <div>Pages</div>
+                  <div class="nav-link-icon w-icon-dropdown-toggle"></div>
+                </div>
+                <nav class={v2 ? 'nav-dropdown-content v1 w-dropdown-list' : 'nav-dropdown-content main w-dropdown-list'}>
+                  <div class="dropdown-menu-wrap">
+                    <div class="dropdown-group-wrap">
+                      <div class="nav-dropdown-top-block">
+                        <div class="dropdown-menu-group">
+                          <div class="nav-menu-group">
+                            <div class="dropdown-subtitle">Main pages</div>
+                            <div class="dropdown-menu-main">
+                              {menu.pages.main.map((item) => <a {...link(item.url, 'dropdown-link w-dropdown-link')}>{item.name}</a>)}
+                            </div>
+                          </div>
+                          {menuType === 'default' ? (
+                            <>
+                              <div class="nav-menu-group">
+                                <div class="dropdown-subtitle">Services</div>
+                                <div class="dropdown-menu-main">
+                                  <div class="w-dyn-list">
+                                    {services.length > 0 ? (
+                                      <div role="list" class="dropdown-menu-main w-dyn-items">
+                                        {services.map((service) => (
+                                          <div role="listitem" class="w-dyn-item">
+                                            <a {...link(`/services/${service.slug}`, 'dropdown-link w-dropdown-link')}>{service.name}</a>
+                                          </div>
+                                        ))}
+                                      </div>
+                                    ) : (
+                                      <div class="w-dyn-empty">
+                                        <div>No items found.</div>
+                                      </div>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="nav-menu-group">
+                                <div class="dropdown-subtitle">Single pages</div>
+                                <div class="dropdown-menu-main">
+                                  {menu.pages.single.map((item) => <a {...link(item.url, 'dropdown-link w-dropdown-link')}>{item.name}</a>)}
+                                </div>
+                              </div>
+                            </>
+                          ) : (
+                            <div class="nav-menu-group">
+                              <div class="dropdown-subtitle">Single pages</div>
+                              <div class="dropdown-menu-main">
+                                {detailLinks.map((item) => (
+                                  <a {...link(item.url, 'dropdown-link w-dropdown-link')} target={item.blank ? '_blank' : undefined}>{item.name}</a>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                          <div class="nav-menu-group">
+                            <div class="dropdown-subtitle">Utility Pages</div>
+                            <div class="dropdown-menu-main">
+                              {menu.pages.utility.map((item) => <a {...link(item.url, 'dropdown-link w-dropdown-link')}>{item.name}</a>)}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-menu-line"></div>
+                    </div>
+                    <div class="dropdown-menu-right">
+                      <div class="dropdown-right-top">
+                        <a {...link('/', 'dropdown-brand-link w-inline-block')}><img src="/images/Link-3.webp" loading="lazy" alt="Pipewise company logo with a stylized pipe icon next to the word Pipewise." class="drowpdown-brand-logo"></a>
+                        <div class="font-regular brand-color">Reliable Service. Sustainable Solutions for the Future.</div>
+                      </div><img src="/images/Rectangle-2-2.webp" loading="lazy" sizes="100vw" srcset="/images/6deab2f5b8180fa31906fed5bc44151a_Rectangle-2-2-p-500.webp 500w, /images/6deab2f5b8180fa31906fed5bc44151a_Rectangle-2-2-p-800.webp 800w, /images/6deab2f5b8180fa31906fed5bc44151a_Rectangle-2-2-p-1080.webp 1080w, /images/6deab2f5b8180fa31906fed5bc44151a_Rectangle-2-2-p-1600.webp 1600w, /images/6deab2f5b8180fa31906fed5bc44151a_Rectangle-2-2-p-2000.webp 2000w, /images/Rectangle-2-2.webp 3091w" alt="Smiling male technician standing with hands in pockets in front of an open service van filled with organized tools and equipment, outside in a suburban neighborhood on a sunny day." class="menu-image">
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </nav>
+        {v2 ? (
+          <a {...link(menuType === 'default' ? '/home-v2' : '/', 'brand-link w-nav-brand')}><img loading="lazy" src="/images/Link-2.webp" alt="Pipewise company logo with a yellow square containing a stylized black pipe on the left and the word 'Pipewise' in dark letters on the right." class="brand-logo"></a>
+        ) : (
+          <a {...link('/', 'brand-link w-nav-brand')}><img loading="lazy" src="/images/pipewise-logo.webp" alt="Pipewise logo" class="brand-logo"></a>
+        )}
+        <div class="nav-button-wrap">
+          <a href={contact.phone_link} class={v2 ? 'phone-number brand-color w-inline-block' : 'phone-number w-inline-block'}><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="phone-icon" aria-hidden="true">
+              <path d="M6.10575 3.80815L5.83731 3.20417C5.66179 2.80925 5.57403 2.61179 5.44278 2.46067C5.2783 2.27129 5.06389 2.13196 4.82403 2.05857C4.63264 2 4.41655 2 3.98438 2C3.35218 2 3.03608 2 2.77073 2.12153C2.45816 2.26468 2.17587 2.57552 2.0634 2.9004C1.96792 3.17619 1.99527 3.45962 2.04996 4.02647C2.63218 10.0601 5.94012 13.368 11.9737 13.9503C12.5406 14.005 12.8241 14.0323 13.0998 13.9368C13.4247 13.8244 13.7356 13.5421 13.8788 13.2295C14.0002 12.9642 14.0002 12.648 14.0002 12.0158C14.0002 11.5837 14.0002 11.3676 13.9417 11.1762C13.8683 10.9364 13.7289 10.722 13.5395 10.5574C13.3885 10.4262 13.191 10.3384 12.7961 10.1629L12.1921 9.89451C11.7644 9.70444 11.5505 9.60937 11.3333 9.58871C11.1253 9.56891 10.9156 9.59811 10.7209 9.67391C10.5175 9.75311 10.3378 9.90291 9.97822 10.2026C9.62035 10.5008 9.44142 10.6499 9.22275 10.7298C9.02888 10.8006 8.77262 10.8268 8.56848 10.7968C8.33815 10.7628 8.16182 10.6686 7.80908 10.4801C6.71175 9.89364 6.1066 9.28851 5.52016 8.19117C5.33167 7.83844 5.23743 7.66211 5.20349 7.43177C5.1734 7.22764 5.19963 6.97137 5.27044 6.77751C5.35032 6.55885 5.49945 6.37991 5.7977 6.022C6.09732 5.66245 6.24714 5.48268 6.32634 5.27927C6.40214 5.08463 6.43132 4.87493 6.41154 4.66699C6.39087 4.44968 6.29583 4.23584 6.10575 3.80815Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path>
+            </svg>
+            <div>{contact.phone}</div>
+          </a>
+          <a {...link('/contact-v1', 'primary-button w-inline-block')} data-wf--primary-btn--variant="base" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="base">
+            <div class="button-dot"></div>
+            <div class="button-text-wrapper">
+              <div class="footer-link-text is-one">Schedule Online</div>
+              <div class="footer-link-text is-two">Schedule Online</div>
+            </div>
+          </a>
+        </div>
+        <div class={v2 ? 'menu-button w-nav-button' : 'menu-button v1 w-nav-button'}>
+          <div class="w-icon-nav-menu"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

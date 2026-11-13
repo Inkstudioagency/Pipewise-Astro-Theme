@@ -1,0 +1,32 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Cta from '@/components/shared/Cta.astro';
+import HeroVideo from '@/components/sections/service-area/HeroVideo.astro';
+import HeroOverlay from '@/components/sections/service-area/HeroOverlay.astro';
+import Hero from '@/components/sections/service-area/Hero.astro';
+import Intro from '@/components/sections/service-area/Intro.astro';
+import Areas from '@/components/sections/service-area/Areas.astro';
+import Coverage from '@/components/sections/service-area/Coverage.astro';
+import Faq from '@/components/sections/shared/Faq.astro';
+
+const WF_PAGE = '6ab619c650050578bb495dd7';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Service Area - Pipewise" description="See every neighbourhood covered in the Pipewise Astro theme, with local service areas, response times and the plumbing work handled near you.">
+  <div class="service-area-hero">
+    <HeroVideo />
+    <Header id="navbar" />
+    <HeroOverlay />
+    <Hero />
+  </div>
+  <div class="main">
+    <Intro />
+    <Areas />
+    <Coverage />
+    <Faq />
+    <Cta />
+    <Footer wfPage={WF_PAGE} backToTop="#top" />
+  </div>
+</BaseLayout>

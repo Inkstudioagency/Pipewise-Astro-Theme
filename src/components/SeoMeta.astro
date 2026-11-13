@@ -1,0 +1,44 @@
+---
+import config from '@/config/config.json';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  /** Root-relative path or absolute URL of the social sharing image */
+  image?: string;
+  type?: 'website' | 'article';
+  noindex?: boolean;
+}
+
+const { metadata, site } = config;
+const {
+  title = metadata.meta_title,
+  description = metadata.meta_description,
+  image = metadata.meta_image,
+  type = 'website',
+  noindex = false,
+} = Astro.props;
+
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site) : undefined;
+// CMS images are absolute already; local images are resolved against the site url
+const imageUrl = Astro.site ? new URL(image, Astro.site).href : image;
+---
+
+<meta charset="utf-8" />
+<title>{title}</title>
+<meta content={description} name="description" />
+<meta content={title} property="og:title" />
+<meta content={description} property="og:description" />
+<meta content={imageUrl} property="og:image" />
+<meta content={title} name="twitter:title" />
+<meta content={description} name="twitter:description" />
+<meta content={imageUrl} name="twitter:image" />
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content={site.title} />
+{canonical && <meta property="og:url" content={canonical.href} />}
+<meta content="summary_large_image" name="twitter:card" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta name="author" content={metadata.meta_author} />
+<meta name="generator" content={Astro.generator} />
+{canonical && <link rel="canonical" href={canonical.href} />}
+{noindex && <meta name="robots" content="noindex" />}

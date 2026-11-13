@@ -1,0 +1,4237 @@
+{
+  "$comment": "Demo content for the Pipewise theme, imported by `npm run seed` and used by the Astro site when STRAPI_URL is not set. Entries are listed oldest first; the site shows the newest first. Image keys point to files in data/uploads.",
+  "media": {
+    "service-emergency-plumbing-services-main": {
+      "file": "service-emergency-plumbing-services-main.jpg",
+      "alt": "Plumber responding to an emergency call-out and fixing a burst pipe",
+      "width": 1280,
+      "height": 853
+    },
+    "service-emergency-plumbing-services-promise": {
+      "file": "service-emergency-plumbing-services-promise.jpg",
+      "alt": "Plumber responding to an emergency call-out and fixing a burst pipe",
+      "width": 1280,
+      "height": 853
+    },
+    "service-emergency-plumbing-services-overview": {
+      "file": "service-emergency-plumbing-services-overview.jpg",
+      "alt": "Plumber responding to an emergency call-out and fixing a burst pipe",
+      "width": 1280,
+      "height": 853
+    },
+    "service-leak-detection-repair-main": {
+      "file": "service-leak-detection-repair-main.jpg",
+      "alt": "Plumber tracing and repairing a hidden water leak under a sink",
+      "width": 1280,
+      "height": 853
+    },
+    "service-leak-detection-repair-promise": {
+      "file": "service-leak-detection-repair-promise.jpg",
+      "alt": "Plumber tracing and repairing a hidden water leak under a sink",
+      "width": 1280,
+      "height": 875
+    },
+    "service-leak-detection-repair-overview": {
+      "file": "service-leak-detection-repair-overview.webp",
+      "alt": "Plumber tracing and repairing a hidden water leak under a sink",
+      "width": 2000,
+      "height": 1333
+    },
+    "service-water-heater-services-main": {
+      "file": "service-water-heater-services-main.jpg",
+      "alt": "Plumber servicing a residential water heater",
+      "width": 1280,
+      "height": 853
+    },
+    "service-water-heater-services-promise": {
+      "file": "service-water-heater-services-promise.webp",
+      "alt": "Plumber servicing a residential water heater",
+      "width": 2000,
+      "height": 1333
+    },
+    "service-water-heater-services-overview": {
+      "file": "service-water-heater-services-overview.jpg",
+      "alt": "Plumber servicing a residential water heater",
+      "width": 1280,
+      "height": 853
+    },
+    "service-pipe-repair-replacement-main": {
+      "file": "service-pipe-repair-replacement-main.jpg",
+      "alt": "Plumber repairing and replacing household water pipes",
+      "width": 1280,
+      "height": 875
+    },
+    "service-pipe-repair-replacement-promise": {
+      "file": "service-pipe-repair-replacement-promise.jpg",
+      "alt": "Plumber repairing and replacing household water pipes",
+      "width": 1280,
+      "height": 853
+    },
+    "service-pipe-repair-replacement-overview": {
+      "file": "service-pipe-repair-replacement-overview.webp",
+      "alt": "Plumber repairing and replacing household water pipes",
+      "width": 2000,
+      "height": 1333
+    },
+    "service-kitchen-plumbing-main": {
+      "file": "service-kitchen-plumbing-main.webp",
+      "alt": "Plumber fitting a kitchen sink tap and waste pipework",
+      "width": 2000,
+      "height": 1333
+    },
+    "service-kitchen-plumbing-promise": {
+      "file": "service-kitchen-plumbing-promise.webp",
+      "alt": "Plumber fitting a kitchen sink tap and waste pipework",
+      "width": 1280,
+      "height": 853
+    },
+    "service-kitchen-plumbing-overview": {
+      "file": "service-kitchen-plumbing-overview.webp",
+      "alt": "Plumber fitting a kitchen sink tap and waste pipework",
+      "width": 1280,
+      "height": 853
+    },
+    "service-commercial-plumbing-main": {
+      "file": "service-commercial-plumbing-main.webp",
+      "alt": "Plumber working on commercial plumbing in a business property",
+      "width": 2000,
+      "height": 1333
+    },
+    "service-commercial-plumbing-promise": {
+      "file": "service-commercial-plumbing-promise.webp",
+      "alt": "Plumber working on commercial plumbing in a business property",
+      "width": 2000,
+      "height": 1333
+    },
+    "service-commercial-plumbing-overview": {
+      "file": "service-commercial-plumbing-overview.webp",
+      "alt": "Plumber working on commercial plumbing in a business property",
+      "width": 1280,
+      "height": 875
+    },
+    "project-kitchen-pipe-replacement": {
+      "file": "project-kitchen-pipe-replacement.webp",
+      "alt": "Plumber replacing ageing pipes under a kitchen sink",
+      "width": 2028,
+      "height": 1624
+    },
+    "project-content-rectangle-161125934": {
+      "file": "project-content-rectangle-161125934.webp",
+      "alt": "",
+      "width": 2520,
+      "height": 1260
+    },
+    "project-emergency-leak-repair": {
+      "file": "project-emergency-leak-repair.webp",
+      "alt": "Plumber repairing a major hidden leak in household pipework",
+      "width": 2028,
+      "height": 1624
+    },
+    "project-content-rectangle-161125933": {
+      "file": "project-content-rectangle-161125933.webp",
+      "alt": "",
+      "width": 2028,
+      "height": 1624
+    },
+    "project-modern-bathroom-plumbing": {
+      "file": "project-modern-bathroom-plumbing.webp",
+      "alt": "Plumber installing fixtures in a newly renovated bathroom",
+      "width": 2028,
+      "height": 1624
+    },
+    "project-content-rectangle-161125933-1": {
+      "file": "project-content-rectangle-161125933-1.webp",
+      "alt": "",
+      "width": 2028,
+      "height": 1624
+    },
+    "project-commercial-drain-upgrade": {
+      "file": "project-commercial-drain-upgrade.webp",
+      "alt": "Plumber upgrading the drainage system at a commercial property",
+      "width": 2880,
+      "height": 1620
+    },
+    "project-content-rectangle-161125933-2": {
+      "file": "project-content-rectangle-161125933-2.webp",
+      "alt": "",
+      "width": 2028,
+      "height": 1624
+    },
+    "project-high-efficiency-water-heater": {
+      "file": "project-high-efficiency-water-heater.webp",
+      "alt": "New high-efficiency water heater installed in a home",
+      "width": 2880,
+      "height": 1620
+    },
+    "project-content-rectangle-161125933-3": {
+      "file": "project-content-rectangle-161125933-3.webp",
+      "alt": "",
+      "width": 2028,
+      "height": 1624
+    },
+    "project-whole-home-pipe-replacement": {
+      "file": "project-whole-home-pipe-replacement.webp",
+      "alt": "Plumber replacing old pipework during a whole-home repipe",
+      "width": 2880,
+      "height": 1620
+    },
+    "blog-7-signs-your-home-might-have-a-hidden-water-leak": {
+      "file": "blog-7-signs-your-home-might-have-a-hidden-water-leak.webp",
+      "alt": "Damp patch on a wall caused by a hidden water leak",
+      "width": 1842,
+      "height": 1197
+    },
+    "blog-content-rectangle-161125974": {
+      "file": "blog-content-rectangle-161125974.webp",
+      "alt": "",
+      "width": 2436,
+      "height": 1332
+    },
+    "blog-how-to-keep-your-drains-clear-and-flowing": {
+      "file": "blog-how-to-keep-your-drains-clear-and-flowing.webp",
+      "alt": "Clear running water flowing into a clean sink drain",
+      "width": 2731,
+      "height": 4096
+    },
+    "blog-how-to-know-when-to-fix-or-swap-out-your-water-heater": {
+      "file": "blog-how-to-know-when-to-fix-or-swap-out-your-water-heater.webp",
+      "alt": "Plumber inspecting a water heater to decide between repair and replacement",
+      "width": 4096,
+      "height": 2731
+    },
+    "blog-why-your-water-pressure-drops-and-what-fixes-it": {
+      "file": "blog-why-your-water-pressure-drops-and-what-fixes-it.webp",
+      "alt": "Plumber checking household water pressure at a valve",
+      "width": 4096,
+      "height": 2731
+    },
+    "blog-five-signs-you-need-a-plumber-not-a-youtube-video": {
+      "file": "blog-five-signs-you-need-a-plumber-not-a-youtube-video.webp",
+      "alt": "Professional plumber at work on a household plumbing repair",
+      "width": 4096,
+      "height": 2731
+    },
+    "blog-preparing-your-pipes-before-the-first-freeze": {
+      "file": "blog-preparing-your-pipes-before-the-first-freeze.webp",
+      "alt": "Insulated water pipes prepared for freezing winter weather",
+      "width": 4096,
+      "height": 2731
+    },
+    "blog-why-your-drain-is-slow-when-jetting-beats-snaking": {
+      "file": "blog-why-your-drain-is-slow-when-jetting-beats-snaking.webp",
+      "alt": "Plumber clearing a slow drain with professional equipment",
+      "width": 4096,
+      "height": 2731
+    },
+    "blog-what-to-plan-for-when-repiping-a-kitchen-remodel": {
+      "file": "blog-what-to-plan-for-when-repiping-a-kitchen-remodel.webp",
+      "alt": "Kitchen under renovation with new pipework visible behind open walls",
+      "width": 4096,
+      "height": 3072
+    },
+    "blog-is-a-plumbing-contract-worth-it": {
+      "file": "blog-is-a-plumbing-contract-worth-it.webp",
+      "alt": "Plumber reviewing a maintenance plan with a homeowner",
+      "width": 1890,
+      "height": 1536
+    },
+    "blog-how-long-should-a-water-heater-actually-last": {
+      "file": "blog-how-long-should-a-water-heater-actually-last.webp",
+      "alt": "Residential water heater tank installed in a utility room",
+      "width": 1890,
+      "height": 1536
+    }
+  },
+  "services": [
+    {
+      "name": "Emergency Plumbing Services",
+      "slug": "emergency-plumbing-services",
+      "number": "01",
+      "shortName": "Emergency Plumbing",
+      "shortDescription": "Fast, dependable solutions for leaks, burst pipes, and unexpected plumbing problems whenever you need help.",
+      "heroHeading": "When Plumbing Can’t Wait, We’re Ready.",
+      "heroSummary": "From burst pipes and major leaks to blocked drains and water heater failures, Pipewise provides fast, professional help when you need it most.",
+      "mainImage": "service-emergency-plumbing-services-main",
+      "promiseImage": "service-emergency-plumbing-services-promise",
+      "promiseTitle": "Work backed by a twelve-month guarantee",
+      "promiseText": "Every emergency call-out is followed up with a written summary of the work done and a twelve-month guarantee on parts and labour.",
+      "promisePoints": [
+        {
+          "text": "24/7 Emergency Call-Outs"
+        },
+        {
+          "text": "Licensed & Insured Team"
+        },
+        {
+          "text": "Upfront Fixed Pricing"
+        }
+      ],
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Emergency Service You Can Count On."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "In times of crisis, it’s essential to have more than just a presence; you require a dedicated team that is well-equipped to handle the situation effectively. Their expertise and readiness to take action can make all the difference in navigating challenges and finding solutions."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "children": [
+            {
+              "type": "text",
+              "text": "What’s included"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "24/7 access to emergency plumbing support"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Fast response for urgent plumbing problems"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Experienced and fully trained plumbing professionals"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Professional tools for accurate problem diagnosis"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Clear recommendations before any work begins"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Upfront pricing with no hidden surprises"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "overviewImage": "service-emergency-plumbing-services-overview",
+      "overviewQuote": "A quick response is beneficial, but it truly matters if the solution is implemented correctly from the outset.",
+      "coverageHeading": "We’ve got your plumbing emergencies covered!",
+      "coverage": [
+        {
+          "title": "Burst Pipes",
+          "description": "Fast assistance for damaged or burst water pipes"
+        },
+        {
+          "title": "Major Water Leaks",
+          "description": "Find the source and stop leaks before they cause further damage."
+        },
+        {
+          "title": "Drain & Sewer Blockages",
+          "description": "Clear serious blockages and restore proper drainage."
+        },
+        {
+          "title": "Water Heater Problems",
+          "description": "Troubleshoot urgent water heater issues and restore hot water"
+        },
+        {
+          "title": "Toilet & Fixture Issues",
+          "description": "Professional help for overflowing toilets and failed fixtures."
+        },
+        {
+          "title": "Sump Pump Problems",
+          "description": "Get help when your sump pump stops protecting your property"
+        },
+        {
+          "title": "Sewer Backup",
+          "description": "Expert help for sewer backups and drainage problems."
+        },
+        {
+          "title": "Gas Line Plumbing",
+          "description": "Immediate help for gas line and plumbing issues."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Emergency Plumbing Services",
+        "metaDescription": "Round-the-clock emergency plumbing in the Pipewise Astro theme, covering burst pipes, major leaks, blocked drains and failed water heaters."
+      }
+    },
+    {
+      "name": "Leak Detection & Repair",
+      "slug": "leak-detection-repair",
+      "number": "02",
+      "shortName": "Leak Detection & Repair",
+      "shortDescription": "Accurate tracing of hidden leaks with minimal disruption, followed by a lasting repair you can rely on.",
+      "heroHeading": "Find the Leak Before It Finds Your Floors.",
+      "heroSummary": "Damp patches, a rising bill and the sound of running water all point the same way. We trace the source with non-invasive equipment and repair it properly.",
+      "mainImage": "service-leak-detection-repair-main",
+      "promiseImage": "service-leak-detection-repair-promise",
+      "promiseTitle": "Repairs backed by a twelve-month guarantee",
+      "promiseText": "Every leak we trace comes with a written report of where it was, what caused it, and a twelve-month guarantee on the repair itself.",
+      "promisePoints": [
+        {
+          "text": "Non-Invasive Leak Tracing"
+        },
+        {
+          "text": "Same-Day Diagnosis"
+        },
+        {
+          "text": "Written Findings Report"
+        }
+      ],
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Leaks Found Fast, Fixed Once."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Most of the cost of a leak is not the repair. It is the weeks it ran unnoticed and the floor that had to come up to reach it. We locate the source before anything is opened, so the repair stays small and the room stays intact."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "children": [
+            {
+              "type": "text",
+              "text": "What’s included"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Acoustic and thermal imaging leak tracing"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Pressure testing on supply and heating lines"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Minimal disruption to floors, walls and tiling"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Same-day repair on most located leaks"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Written report suitable for an insurance claim"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Upfront pricing before any work begins"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "overviewImage": "service-leak-detection-repair-overview",
+      "overviewQuote": "Guesswork costs more than equipment. We find the leak first, then we open the wall.",
+      "coverageHeading": "Every kind of leak, traced and repaired.",
+      "coverage": [
+        {
+          "title": "Hidden Pipe Leaks",
+          "description": "Acoustic tracing that pinpoints leaks behind walls and floors."
+        },
+        {
+          "title": "Under-Slab Leaks",
+          "description": "Locate and repair leaks beneath concrete without tearing up the room."
+        },
+        {
+          "title": "Dripping Taps & Valves",
+          "description": "Worn washers and cartridges replaced in a single visit."
+        },
+        {
+          "title": "Toilet & Cistern Leaks",
+          "description": "Stop the silent leaks that quietly inflate your water bill."
+        },
+        {
+          "title": "Central Heating Leaks",
+          "description": "Pressure loss traced across radiators, valves and pipework."
+        },
+        {
+          "title": "Water Ingress",
+          "description": "Find where outside water is getting in and stop it at the source."
+        },
+        {
+          "title": "Outdoor Supply Leaks",
+          "description": "Trace losses in garden, irrigation and outbuilding lines."
+        },
+        {
+          "title": "Meter Investigations",
+          "description": "Confirm whether a high reading is a leak or a change in usage."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Leak Detection & Repair",
+        "metaDescription": "Non-invasive leak tracing in the Pipewise Astro theme, using acoustic and thermal equipment to find hidden leaks before any floor comes up."
+      }
+    },
+    {
+      "name": "Water Heater Services",
+      "slug": "water-heater-services",
+      "number": "03",
+      "shortName": "Water Heater Services",
+      "shortDescription": "Installation, repair and servicing that keeps hot water reliable and your energy bills under control.",
+      "heroHeading": "Hot Water That Works Every Single Morning.",
+      "heroSummary": "Installation, servicing and repair for tanks, combis and unvented cylinders — sized correctly, fitted safely and serviced on schedule.",
+      "mainImage": "service-water-heater-services-main",
+      "promiseImage": "service-water-heater-services-promise",
+      "promiseTitle": "Installations backed by a twelve-month guarantee",
+      "promiseText": "Every heater we fit is commissioned, documented and covered by a twelve-month guarantee on parts and labour, on top of the manufacturer’s own warranty.",
+      "promisePoints": [
+        {
+          "text": "Repair or Replace Options"
+        },
+        {
+          "text": "All Major Brands Serviced"
+        },
+        {
+          "text": "Twelve-Month Parts Warranty"
+        }
+      ],
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Reliable Hot Water, Properly Installed."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A water heater rarely fails without warning. Longer waits, uneven temperature and a new rumble in the tank are all early signs. We service what can be saved and replace what cannot, sized to the way your household actually uses hot water."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "children": [
+            {
+              "type": "text",
+              "text": "What’s included"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Correct sizing for your household’s real demand"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Safe removal and disposal of the old unit"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Full commissioning and pressure testing"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Annual servicing that protects your warranty"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Repairs on tanks, combis and unvented cylinders"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Clear quotes with no hidden call-out fees"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "overviewImage": "service-water-heater-services-overview",
+      "overviewQuote": "A heater that is sized right and serviced yearly will outlive one that was simply the cheapest to fit.",
+      "coverageHeading": "Every hot water problem, handled.",
+      "coverage": [
+        {
+          "title": "No Hot Water",
+          "description": "Diagnose ignition, thermostat and supply faults in one visit."
+        },
+        {
+          "title": "Lukewarm Output",
+          "description": "Restore full temperature where elements or sensors have failed."
+        },
+        {
+          "title": "Noisy Tanks",
+          "description": "Flush the sediment build-up that causes rumbling and knocking."
+        },
+        {
+          "title": "Leaking Cylinders",
+          "description": "Repair or replace failing tanks before they damage the room."
+        },
+        {
+          "title": "Pilot Light Faults",
+          "description": "Fix thermocouples and gas valves on older gas heaters."
+        },
+        {
+          "title": "Pressure Loss",
+          "description": "Recharge expansion vessels and correct unvented system pressure."
+        },
+        {
+          "title": "New Installations",
+          "description": "Supply and fit tanks, combis and unvented cylinders."
+        },
+        {
+          "title": "Annual Servicing",
+          "description": "Scheduled checks that keep warranties and efficiency intact."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Water Heater Services",
+        "metaDescription": "Water heater installation, servicing and repair in the Pipewise Astro theme, sized to real demand and commissioned properly on the day."
+      }
+    },
+    {
+      "name": "Pipe Repair & Replacement",
+      "slug": "pipe-repair-replacement",
+      "number": "04",
+      "shortName": "Pipe Repair & Replacement",
+      "shortDescription": "From small joint fixes to full re-pipes, we restore water flow and pressure throughout your property.",
+      "heroHeading": "Repipe Once, Forget About It for Decades.",
+      "heroSummary": "Trenchless repairs and full re-pipes that restore pressure and flow across the property — with as little digging and disruption as the job allows.",
+      "mainImage": "service-pipe-repair-replacement-main",
+      "promiseImage": "service-pipe-repair-replacement-promise",
+      "promiseTitle": "Pipework backed by a twelve-month guarantee",
+      "promiseText": "Every repair and re-pipe is pressure tested, photographed and covered by a twelve-month guarantee on parts and labour.",
+      "promisePoints": [
+        {
+          "text": "Trenchless Where Possible"
+        },
+        {
+          "text": "Camera Inspection Included"
+        },
+        {
+          "text": "Clean Site on Completion"
+        }
+      ],
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Pressure and Flow, Fully Restored."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Weak showers, discoloured water and repeat joint failures usually mean the pipework itself has reached the end of its life. We survey the run first, then choose the least invasive route to a permanent fix — often without lifting the garden at all."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "children": [
+            {
+              "type": "text",
+              "text": "What’s included"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Camera survey before any pipe is opened"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Trenchless lining and pipe bursting where suitable"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Copper, PEX and push-fit systems installed"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Pressure testing on every completed run"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Reinstatement of floors, walls and driveways"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Fixed quotes agreed before work starts"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "overviewImage": "service-pipe-repair-replacement-overview",
+      "overviewQuote": "The cheapest repair is the one you only have to pay for once.",
+      "coverageHeading": "Every pipe problem, from joint to mains.",
+      "coverage": [
+        {
+          "title": "Burst Pipes",
+          "description": "Emergency isolation and permanent replacement of failed sections."
+        },
+        {
+          "title": "Corroded Supply Lines",
+          "description": "Swap ageing galvanised and lead runs for modern pipework."
+        },
+        {
+          "title": "Low Water Pressure",
+          "description": "Trace restrictions and resize pipework to restore proper flow."
+        },
+        {
+          "title": "Whole-House Re-Pipes",
+          "description": "Replace the full supply network with minimal disruption."
+        },
+        {
+          "title": "Trenchless Lining",
+          "description": "Rehabilitate buried pipes without excavating the garden."
+        },
+        {
+          "title": "Frozen Pipe Damage",
+          "description": "Thaw, repair and insulate runs that split in cold weather."
+        },
+        {
+          "title": "Mains Connections",
+          "description": "New supply connections and stopcock replacements."
+        },
+        {
+          "title": "Outdoor & Garden Lines",
+          "description": "Repair irrigation, tap and outbuilding supply pipework."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Pipe Repair & Replacement",
+        "metaDescription": "Pipe repair and whole-home repiping in the Pipewise Astro theme, with trenchless options, camera surveys and full reinstatement included."
+      }
+    },
+    {
+      "name": "Kitchen Plumbing",
+      "slug": "kitchen-plumbing",
+      "number": "05",
+      "shortName": "Kitchen Plumbing",
+      "shortDescription": "Fit-outs, appliance hook-ups and waste runs, every tested under load before we leave.",
+      "heroHeading": "A Kitchen That Drains, Fills and Behaves.",
+      "heroSummary": "Sinks, taps, waste lines and appliance hook-ups fitted cleanly, tested under load, and left working exactly as they should.",
+      "mainImage": "service-kitchen-plumbing-main",
+      "promiseImage": "service-kitchen-plumbing-promise",
+      "promiseTitle": "Kitchen work backed by a twelve-month guarantee",
+      "promiseText": "Every fit-out is leak tested under running load before we leave, and carries a twelve-month guarantee on parts and labour.",
+      "promisePoints": [
+        {
+          "text": "Sink, Tap & Disposal Work"
+        },
+        {
+          "text": "Appliance Hook-Ups"
+        },
+        {
+          "text": "Worktops Protected Throughout"
+        }
+      ],
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Kitchen Plumbing Done Properly."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A kitchen looks finished the day it goes in. Whether it stays that way depends on what happens behind the units — the fall on the waste, the seal at the tap base, the hose that was never clipped. We do the parts nobody sees as carefully as the parts they do."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "children": [
+            {
+              "type": "text",
+              "text": "What’s included"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Sink, tap and waste installation to manufacturer spec"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Dishwasher and washing machine hook-ups"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Waste disposal units supplied and fitted"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Boiling and filtered drinking water taps"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Grease and blockage clearing on kitchen waste"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Coordination with your kitchen fitter’s schedule"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "overviewImage": "service-kitchen-plumbing-overview",
+      "overviewQuote": "A kitchen looks finished the day it is installed. It stays finished only if the plumbing behind it was done right.",
+      "coverageHeading": "Everything behind your kitchen, covered.",
+      "coverage": [
+        {
+          "title": "Sink & Tap Installation",
+          "description": "New sinks and taps fitted, sealed and leak tested."
+        },
+        {
+          "title": "Dishwasher Hook-Ups",
+          "description": "Safe supply and waste connections for new appliances."
+        },
+        {
+          "title": "Waste Disposal Units",
+          "description": "Supply, fit and service in-sink food waste units."
+        },
+        {
+          "title": "Blocked Kitchen Waste",
+          "description": "Clear grease and debris from traps and waste runs."
+        },
+        {
+          "title": "Leaking Under-Sink Pipework",
+          "description": "Replace failing traps, seals and flexible hoses."
+        },
+        {
+          "title": "Filtered & Boiling Taps",
+          "description": "Install instant hot and filtered drinking water systems."
+        },
+        {
+          "title": "Appliance Relocations",
+          "description": "Move supply and waste when the layout changes."
+        },
+        {
+          "title": "Kitchen Refit Plumbing",
+          "description": "First and second fix for full kitchen renovations."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Kitchen Plumbing",
+        "metaDescription": "Kitchen plumbing in the Pipewise Astro theme, from sinks, taps and waste runs to appliance hook-ups, all leak tested under load before handover."
+      }
+    },
+    {
+      "name": "Commercial Plumbing",
+      "slug": "commercial-plumbing",
+      "number": "06",
+      "shortName": "Commercial Plumbing",
+      "shortDescription": "Contracts, compliance and priority call - outs for businesses that cannot afford to close their doors.",
+      "heroHeading": "Plumbing That Keeps Your Doors Open.",
+      "heroSummary": "Planned maintenance and rapid response for offices, kitchens and retail spaces — scheduled around your trading hours, not ours.",
+      "mainImage": "service-commercial-plumbing-main",
+      "promiseImage": "service-commercial-plumbing-promise",
+      "promiseTitle": "Commercial work backed by a twelve-month guarantee",
+      "promiseText": "Every visit is logged with a written job sheet for your records, and all parts and labour carry a twelve-month guarantee.",
+      "promisePoints": [
+        {
+          "text": "Out-of-Hours Scheduling"
+        },
+        {
+          "text": "Compliance Certificates Issued"
+        },
+        {
+          "text": "Planned Maintenance Plans"
+        }
+      ],
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Commercial Plumbing Without Downtime."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "For a business the repair itself is rarely the expensive part. The cost sits in the hours you could not trade. We work to that reality — planned visits outside opening hours, priority response for contracted sites, and paperwork that satisfies an audit."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "children": [
+            {
+              "type": "text",
+              "text": "What’s included"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Out-of-hours and weekend scheduling as standard"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Planned preventative maintenance contracts"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Commercial kitchen and washroom specialists"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Compliance documentation for every visit"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Priority response for contracted sites"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Consolidated invoicing across multiple properties"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "overviewImage": "service-commercial-plumbing-overview",
+      "overviewQuote": "For a business, the real cost of a leak is rarely the repair. It is the hours you could not trade.",
+      "coverageHeading": "Every commercial system, kept running.",
+      "coverage": [
+        {
+          "title": "Commercial Kitchens",
+          "description": "Grease traps, waste lines and appliance connections maintained."
+        },
+        {
+          "title": "Washroom Facilities",
+          "description": "Cisterns, sensor taps and urinal systems serviced on schedule."
+        },
+        {
+          "title": "Emergency Response",
+          "description": "Priority call-out for sites on a maintenance contract."
+        },
+        {
+          "title": "Planned Maintenance",
+          "description": "Scheduled inspections that prevent unplanned closures."
+        },
+        {
+          "title": "Water Efficiency Audits",
+          "description": "Find and fix the losses driving your utility bills."
+        },
+        {
+          "title": "Backflow Prevention",
+          "description": "Testing and certification that keeps supplies compliant."
+        },
+        {
+          "title": "Multi-Site Contracts",
+          "description": "One point of contact across your whole property portfolio."
+        },
+        {
+          "title": "Fit-Out & Refurbishment",
+          "description": "First and second fix plumbing for commercial projects."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Commercial Plumbing",
+        "metaDescription": "Commercial plumbing in the Pipewise Astro theme, with out-of-hours scheduling, maintenance contracts and compliance paperwork for every visit."
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectStatus": "Completed",
+      "name": "Kitchen Pipe Replacement",
+      "slug": "kitchen-pipe-replacement",
+      "image": "project-kitchen-pipe-replacement",
+      "shortDescription": "Replaced aging kitchen pipes to improve water flow and prevent recurring leaks.",
+      "longTitle": "Replaced ageing kitchen pipework with new supply and waste runs, restoring full flow and stopping recurring leaks.",
+      "serviceType": "Repair",
+      "propertyType": "Residential",
+      "location": "Brookfield",
+      "duration": "2 Days",
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "A Smarter Plumbing Upgrade for Everyday Reliability."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The homeowners were facing persistent plumbing problems in their kitchen that required a trustworthy solution. After careful consideration, they turned to Pipewise, who expertly replaced their outdated plumbing system with state-of-the-art, durable pipework designed for longevity. This upgrade not only resolved their immediate issues but also ensured peace of mind for years to come."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "project-content-rectangle-161125934"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Recurring Plumbing Issues Were Getting in the Way."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Our team replaced the aging pipework, resolved recurring leaks, and improved water flow with a reliable plumbing system designed for everyday use."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Challenge"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Low water pressure"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Recurring pipe leaks"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Aging plumbing infrastructure"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Inconsistent water flow"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“Pipewise made the whole process simple. They explained everything clearly, finished the work quickly, and the water flow has been much better ever since.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "A Complete Pipework Upgrade, Done Right."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Our team inspected the existing system, identified the problem areas, and replaced the damaged pipework with a cleaner, more reliable setup."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Solution"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Replaced damaged and aging pipes"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Improved water flow and pressure"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Upgraded key plumbing connections"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Tested the entire system after installation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Result"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The completed upgrade delivered a more reliable kitchen plumbing system with improved performance and fewer recurring issues."
+            }
+          ]
+        }
+      ],
+      "pipesReplaced": "100%",
+      "projectCompleted": "2 Days",
+      "improvedWaterFlow": "35%",
+      "activeLeaks": "0",
+      "seo": {
+        "metaTitle": "Kitchen Pipe Replacement",
+        "metaDescription": "A kitchen repipe case study in the Pipewise Astro theme, replacing ageing supply and waste runs to restore full flow and stop leaks coming back."
+      }
+    },
+    {
+      "projectStatus": "Completed",
+      "name": "Emergency Leak Repair",
+      "slug": "emergency-leak-repair",
+      "image": "project-emergency-leak-repair",
+      "shortDescription": "Located and repaired a major hidden leak before it caused further water damage.",
+      "longTitle": "Traced and repaired a hidden leak the same day, protecting floors and plasterwork before any further damage spread.",
+      "serviceType": "Emergency",
+      "propertyType": "Residential",
+      "location": "Ridgemont",
+      "duration": "1 Day",
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "A Fast Response That Stopped the Damage."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The homeowner noticed a damp patch spreading across a ceiling and called Pipewise the same evening. Our emergency team traced the source to a concealed supply line, isolated the water, and had the leak sealed before it reached the floor below."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "project-content-rectangle-161125933"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "A Hidden Leak Was Quietly Causing Damage."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "By the time the leak became visible, water had already been tracking along a joist for days. We located it without opening up the whole ceiling and repaired the line on the same visit."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Challenge"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Water staining across the ceiling"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Leak hidden behind plasterboard"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Damp spreading through the wall cavity"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Risk of further structural damage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“They arrived within the hour and found the leak straight away. What could have been a very expensive repair was sorted in a single evening.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Located, Isolated and Repaired in One Visit."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Our technician used acoustic tracing to pinpoint the break, cut a single access panel, and replaced the damaged section with new pipework."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Solution"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Traced the leak without major access work"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Isolated and drained the affected line"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Replaced the damaged pipe section"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Pressure tested the repair before leaving"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Result"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The leak was stopped the same day, the surrounding area was dried out, and the homeowner avoided a far larger ceiling repair."
+            }
+          ]
+        }
+      ],
+      "pipesReplaced": "12 ft",
+      "projectCompleted": "1 Day",
+      "improvedWaterFlow": "20%",
+      "activeLeaks": "0",
+      "seo": {
+        "metaTitle": "Emergency Leak Repair",
+        "metaDescription": "An emergency leak case study in the Pipewise Astro theme, traced and repaired in a single evening before the ceiling below could come down."
+      }
+    },
+    {
+      "projectStatus": "Completed",
+      "name": "Modern Bathroom Plumbing",
+      "slug": "modern-bathroom-plumbing",
+      "image": "project-modern-bathroom-plumbing",
+      "shortDescription": "Complete plumbing installation for a newly renovated bathroom with updated fixtures.",
+      "longTitle": "Fitted complete bathroom plumbing for a full renovation with modern fixtures, neat pipework, and leak-tested joints.",
+      "serviceType": "Installation",
+      "propertyType": "Commercial",
+      "location": "Halstead",
+      "duration": "4 Days",
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Fresh Plumbing Behind a Brand New Bathroom."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A full bathroom renovation needed plumbing that matched the new layout. Pipewise set out the supply and waste runs, installed the new fixtures, and left the space ready for the finishing trades."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "project-content-rectangle-161125933-1"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "A New Layout Needed a New Plumbing Plan."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The original pipework did not suit the new fixture positions, so the entire first fix was reworked before any tiling began."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Challenge"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Fixtures moved to new positions"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Old waste runs set at the wrong falls"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Limited access behind the stud wall"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Tight schedule around other trades"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“Everything was set out exactly where we needed it. The tiler walked in the next morning and could start straight away.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "First Fix and Second Fix, Handled Properly."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "We reran the supply and waste pipework to suit the new layout, then returned after tiling to fit and commission every fixture."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Solution"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Reran hot and cold supply lines"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Set correct falls on all waste runs"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Installed basin, WC and shower set"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Commissioned and leak tested the room"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Result"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The bathroom was handed over on schedule with clean pipework, correct drainage falls, and no callbacks after completion."
+            }
+          ]
+        }
+      ],
+      "pipesReplaced": "100%",
+      "projectCompleted": "4 Days",
+      "improvedWaterFlow": "30%",
+      "activeLeaks": "0",
+      "seo": {
+        "metaTitle": "Modern Bathroom Plumbing",
+        "metaDescription": "A bathroom renovation case study in the Pipewise Astro theme, covering first fix, second fix and commissioning around the other trades."
+      }
+    },
+    {
+      "projectStatus": "Completed",
+      "name": "Commercial Drain Upgrade",
+      "slug": "commercial-drain-upgrade",
+      "image": "project-commercial-drain-upgrade",
+      "shortDescription": "Improved drainage performance for a busy commercial property with a complete system upgrade.",
+      "longTitle": "Upgraded the drainage of a busy commercial site with wider runs, corrected falls, and no more recurring blockages.",
+      "serviceType": "Maintenance",
+      "propertyType": "Commercial",
+      "location": "Midtown",
+      "duration": "3 Days",
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Drainage That Keeps a Busy Site Running."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A high-traffic commercial kitchen was losing hours every week to slow drains. Pipewise cleared the existing system, replaced the failing sections, and put a maintenance schedule in place."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "project-content-rectangle-161125933-2"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Slow Drains Were Interrupting Daily Trade."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Years of grease build-up and a partially collapsed run meant waste water was backing up in the middle of service."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Challenge"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Repeated blockages during peak hours"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Heavy grease build-up in the main run"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "A collapsed section beneath the floor"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Downtime affecting daily trade"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“They worked around our opening hours and kept the kitchen running. We have not had a single backup since.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "A Full Clean, Then a Proper Upgrade."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "We jetted the system clean, camera surveyed the full run, and replaced the damaged section with larger bore pipework."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Solution"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "High pressure jetting of the main line"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "CCTV survey of the full drain run"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Replaced the collapsed section"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Fitted a serviceable grease trap"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Result"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Waste water now clears freely at peak load, and a scheduled service keeps the system ahead of any further build-up."
+            }
+          ]
+        }
+      ],
+      "pipesReplaced": "85%",
+      "projectCompleted": "3 Days",
+      "improvedWaterFlow": "40%",
+      "activeLeaks": "0",
+      "seo": {
+        "metaTitle": "Commercial Drain Upgrade",
+        "metaDescription": "A commercial drainage case study in the Pipewise Astro theme, jetting, surveying and replacing a failing run without closing the kitchen."
+      }
+    },
+    {
+      "projectStatus": "Completed",
+      "name": "High-Efficiency Water Heater",
+      "slug": "high-efficiency-water-heater",
+      "image": "project-high-efficiency-water-heater",
+      "shortDescription": "Installed a modern water heating system for improved efficiency and dependable hot water.",
+      "longTitle": "Installed a high-efficiency water heater, correctly sized and commissioned for dependable hot water every morning.",
+      "serviceType": "Installation",
+      "propertyType": "Residential",
+      "location": "Ashgrove",
+      "duration": "1 Day",
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Dependable Hot Water, Far Less Energy."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "An ageing cylinder was slow to recover and expensive to run. Pipewise removed it and installed a high-efficiency unit sized to the household's actual demand."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "project-content-rectangle-161125933-3"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "An Old Unit Was Costing More Every Year."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The existing heater struggled to keep up with morning demand and was running well below its rated efficiency."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Challenge"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Hot water running out each morning"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Long recovery time between uses"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Energy costs rising year on year"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Unit well past its service life"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“Booked on the Monday, fitted on the Wednesday. The difference in how quickly the hot water comes through is obvious.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Correctly Sized, Correctly Installed."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "We calculated the household demand, removed the old cylinder, and installed and commissioned the new unit in a single visit."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Solution"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Sized the unit to real household demand"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Removed and disposed of the old cylinder"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Installed the new unit and safety controls"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Commissioned and set the flow temperature"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Result"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Hot water is now available on demand throughout the day, with a clear drop in the household's energy use."
+            }
+          ]
+        }
+      ],
+      "pipesReplaced": "100%",
+      "projectCompleted": "1 Day",
+      "improvedWaterFlow": "25%",
+      "activeLeaks": "0",
+      "seo": {
+        "metaTitle": "High-Efficiency Water Heater",
+        "metaDescription": "A water heater replacement case study in the Pipewise Astro theme, correctly sized, safely installed and commissioned for hot water on demand all day."
+      }
+    },
+    {
+      "projectStatus": "Completed",
+      "name": "Whole-Home Pipe Replacement",
+      "slug": "whole-home-pipe-replacement",
+      "image": "project-whole-home-pipe-replacement",
+      "shortDescription": "Replaced outdated plumbing throughout the property with a reliable modern pipe system.",
+      "longTitle": "Replaced outdated plumbing throughout the home with new fixtures, improved water flow, and reliable pipe connections.",
+      "serviceType": "Replacement",
+      "propertyType": "Residential",
+      "location": "Fairview",
+      "duration": "5 Days",
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "A Complete Repipe for a Long-Term Fix."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Decades-old pipework was failing in more than one place. Rather than patch it again, the homeowners asked Pipewise to replace the system throughout the property."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "project-content-rectangle-161125934"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Patch Repairs Were No Longer Enough."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Leaks were appearing in different rooms and water pressure had dropped noticeably across the whole house."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Challenge"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Leaks appearing in multiple rooms"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Low pressure on the upper floor"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Corroded original pipework"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Patch repairs no longer holding"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“They planned it room by room so we always had water somewhere. Five days later the whole house was on new pipe.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Replaced Throughout, Room by Room."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "We staged the work so the household kept running water, replacing each run with modern pipework and new isolation points."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Solution"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Replaced all hot and cold runs"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Added isolation valves at every fixture"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Rebalanced pressure across both floors"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Pressure tested the full system"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "The Result"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The property now runs on a single, consistent pipework system with steady pressure upstairs and down, and no remaining leaks."
+            }
+          ]
+        }
+      ],
+      "pipesReplaced": "100%",
+      "projectCompleted": "5 Days",
+      "improvedWaterFlow": "45%",
+      "activeLeaks": "0",
+      "seo": {
+        "metaTitle": "Whole-Home Pipe Replacement",
+        "metaDescription": "A whole-home repipe case study in the Pipewise Astro theme, staged room by room to restore pressure and end repeat leaks across both floors."
+      }
+    }
+  ],
+  "blogs": [
+    {
+      "title": "7 Signs Your Home Might Have a Hidden Water Leak",
+      "slug": "7-signs-your-home-might-have-a-hidden-water-leak",
+      "image": "blog-7-signs-your-home-might-have-a-hidden-water-leak",
+      "date": "2025-09-10",
+      "category": "Plumbing Tips",
+      "readTime": "7 min read",
+      "featured": true,
+      "shortDescription": "Small leaks can become expensive problems. Learn the warning signs that could indicate a hidden plumbing leak.",
+      "summary": "The leaks that cause real damage are almost never the dramatic ones. They are slow, hidden behind a wall or under a floor, and they run for weeks before anything shows. These are the signs worth acting on, and the simple test that will tell you for certain whether you have one.",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "1. Running water in a quiet house"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Stand in the hallway late at night with everything switched off and listen. A faint hiss or trickle with no tap open is one of the most reliable indicators there is, and it often appears months before any visible damage. Put an ear to the wall in a few places and the sound usually gets louder near the source."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "2. A patch of lawn greener than the rest"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "If the supply line runs under the garden, a leak feeds the grass above it. A strip or patch that stays lush in dry weather, or ground that feels soft underfoot when it has not rained, is pointing directly at the pipe beneath."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "3. Tap water that tastes or smells different"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A leak on a buried supply line can draw soil and bacteria in through the same opening water escapes from, particularly when pressure drops. A sudden earthy or metallic taste from a tap that was fine last week deserves checking rather than filtering."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "blog-content-rectangle-161125974"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "4. Paint or wallpaper that bubbles"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Moisture arriving from behind lifts a decorated surface away from the wall before it ever stains it. Blistering paint, a seam of wallpaper peeling on its own, or a bulge in plasterboard all mean water is already in the structure."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "5. Mould that keeps returning to the same spot"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Mould cleaned off a wall and back within a fortnight is not a ventilation problem. Something is keeping that area permanently damp, and in a bathroom or kitchen it is very often a joint behind the tiling rather than condensation."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "6. The pump or boiler cycling more often"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A system that loses pressure continuously has to work harder to hold it. If your boiler needs topping up more frequently than it used to, or a pressure pump is starting several times an hour with nothing running, water is going somewhere."
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“By the time a hidden leak is visible, it has usually been running long enough to have done the expensive part of the damage already.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "7. Confirm it with the meter test"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Turn off every tap and appliance in the house, including the ice maker and any irrigation. Note the exact meter reading, wait two hours without using water, and read it again. Any movement means an active leak somewhere on your side of the meter."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "That test costs nothing and rules the question in or out completely. If it moves, book a leak detection visit rather than opening walls — acoustic and thermal equipment will find the spot in under an hour without taking anything apart."
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaTitle": "7 Signs Your Home Might Have a Hidden Water Leak",
+        "metaDescription": "Seven signs of a hidden water leak, read on the Pipewise Astro theme. Damaging leaks run quietly for weeks before anything becomes visible."
+      }
+    },
+    {
+      "title": "How to Keep Your Drains Clear and Flowing",
+      "slug": "how-to-keep-your-drains-clear-and-flowing",
+      "image": "blog-how-to-keep-your-drains-clear-and-flowing",
+      "date": "2025-09-14",
+      "category": "Article",
+      "readTime": "5 min read",
+      "featured": false,
+      "shortDescription": "Simple habits that stop slow drains and blockages before they turn into an emergency call-out.",
+      "summary": "Most blocked drains are not bad luck. They are the result of a few months of small habits, and they give plenty of warning before they finally stop draining altogether. Keeping them clear is mostly about what never goes down them in the first place, plus a handful of minutes each month.",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "1. Keep fats and oils out of the sink entirely"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Cooking fat pours as a liquid and sets as a solid somewhere down the line where it is cold. It then catches everything else that passes. Pour it into a jar, let it set, and put it in the bin — this one habit prevents more kitchen blockages than anything else on this list."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "2. Strainers beat drain cleaner every time"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A few pounds of mesh strainer in each sink, basin and shower catches hair, food and grit before it enters the pipe at all. Emptying one takes two seconds. It is considerably cheaper and considerably kinder to your pipework than any bottled product."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "blog-content-rectangle-161125974"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "3. Hot water alone is not a flush"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Running the hot tap for a few seconds moves grease further along the pipe rather than removing it. A proper monthly flush is a full kettle of very hot water poured steadily down the kitchen drain, ideally last thing at night when nothing else will be used."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "If you want to add something, a handful of bicarbonate followed by vinegar and then the hot water is fine. Avoid caustic drain cleaners as routine maintenance — they damage older pipe and seals, and they do nothing a flush does not."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "4. Give the bathroom drains a weekly minute"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Shower and basin drains block with hair and soap scum, not grease, so they need a different habit. Lift the grate, pull out what has gathered, and run the tap hot for thirty seconds. Doing it weekly takes a minute; doing it never takes a plumber."
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“A drain that has started running slow is not yet a problem. It is the only warning you are going to get before it becomes one.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "5. Listen to what a slow drain is telling you"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "One slow fixture is a local clog and usually clears with a plunger or a hand auger. Several slow at once means the shared line downstream is restricting, and that is a different job entirely — no amount of work at the plughole will reach it."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Gurgling from a nearby drain when you empty a sink is worth attention too. It usually means air is being pulled through a trap because the line is partly blocked, and it tends to appear well before anything stops draining."
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaTitle": "How to Keep Your Drains Clear and Flowing",
+        "metaDescription": "Keeping drains clear and flowing, read on the Pipewise Astro theme. Simple habits that stop slow drains turning into an emergency call-out."
+      }
+    },
+    {
+      "title": "How to Know When to Fix or Swap Out Your Water Heater",
+      "slug": "how-to-know-when-to-fix-or-swap-out-your-water-heater",
+      "image": "blog-how-to-know-when-to-fix-or-swap-out-your-water-heater",
+      "date": "2025-09-14",
+      "category": "Article",
+      "readTime": "6 min read",
+      "featured": false,
+      "shortDescription": "Rising bills, rusty water and uneven heat all hint at whether a repair or a replacement is the smarter spend.",
+      "summary": "A water heater rarely fails without warning. It gets noisier, it runs out of hot water sooner, the water looks slightly off, and the bill creeps up. The question is whether those symptoms add up to a repair worth paying for or a unit that is quietly telling you its remaining life is short.",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "1. Start with the age of the unit"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A conventional tank heater runs about eight to twelve years; a tankless unit often reaches twenty. Find the serial number on the data plate — most manufacturers encode the build date in the first four characters. Everything else you decide follows from that number, because a repair on a two-year-old unit and the same repair on an eleven-year-old unit are completely different propositions."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "2. Rusty water points at the tank itself"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Discoloured hot water that runs clear on the cold side means corrosion inside the tank rather than in the supply. Sometimes that is a spent sacrificial anode, which is a genuine repair. Often it is the glass lining having failed, which is not repairable at any price."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "blog-content-rectangle-161125974"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "3. Weigh the repair against the remaining life"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A thermostat, a heating element or a pressure relief valve is a modest bill and worth doing on almost any unit that is not already past its expected life. A failed tank, a cracked heat exchanger or a gas valve on an older unit is usually a large enough share of replacement cost that you are paying twice."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The rough rule most plumbers use is simple: if the repair costs more than half a new unit and the heater is past two thirds of its expected life, replace it."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "4. Efficiency belongs in the sum"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A heater from a decade ago is meaningfully less efficient than a current one, and in a household using hot water daily that difference shows up on every bill for the next ten years. It does not justify replacing a healthy unit, but it does tilt a borderline decision."
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“The most expensive water heater is the one you repair three times in its last two years and then replace anyway.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "5. A leaking tank ends the conversation"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Water pooling under the unit from a fitting is a repair. Water seeping from the body of the tank is not — that is the tank wall itself, and there is no fix for it. Once a tank starts weeping it should be replaced promptly, because they tend to fail properly rather than politely."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "If you find standing water under the heater, shut off the supply and the power or gas to the unit before anything else, then call someone. A tank that lets go holds a lot more water than most people expect."
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaTitle": "When to Fix or Replace Your Water Heater",
+        "metaDescription": "Repair or replace a water heater, read on the Pipewise Astro theme. Rising bills, rusty water and uneven heat all point one way or the other."
+      }
+    },
+    {
+      "title": "Why Your Water Pressure Drops, and What Fixes It",
+      "slug": "why-your-water-pressure-drops-and-what-fixes-it",
+      "image": "blog-why-your-water-pressure-drops-and-what-fixes-it",
+      "date": "2025-09-14",
+      "category": "Article",
+      "readTime": "5 min read",
+      "featured": false,
+      "shortDescription": "From a half-closed stopcock to a failing valve, where pressure really goes",
+      "summary": "Weak pressure is rarely the mains; it is usually one valve, one filter or one corroded run",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "1. The stopcock is not fully open"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "This is the first thing to rule out and the cheapest to fix. An internal stopcock that was closed for a repair and only turned back most of the way will throttle the whole house. Open it fully, then back it off a quarter turn so it does not seize in place."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "2. A blocked aerator on one tap"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "If the problem is at a single outlet rather than across the house, unscrew the aerator at the tip of the spout. Grit and scale collect in that mesh and choke the flow. Soak it overnight in descaler, rinse it and refit it before assuming anything larger is wrong."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "3. Limescale narrowing the pipework"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "In a hard water area the internal diameter of a pipe shrinks year by year as scale builds. It happens slowly enough that nobody notices until a shower feels weak, and it affects the hot side first because heat accelerates the deposit."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "blog-content-rectangle-161125974"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "4. A failing pressure-reducing valve"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Most homes have a valve that holds incoming pressure at a safe level. When its internal diaphragm perishes it tends to fail low, and the drop arrives across every outlet at once rather than gradually. Replacing it is a short job with an immediate result."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "5. A leak between the main and the house"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Water escaping on the supply side never reaches your taps, so pressure falls and the bill rises together. If the meter creeps with everything closed, the loss is underground and needs tracing before anything indoors is touched."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "6. Too many outlets on one run"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Pressure that collapses the moment a second tap opens is usually a sizing problem rather than a fault. An undersized run feeding a whole bathroom simply cannot supply two fixtures at once, and resizing that section solves it permanently."
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“Almost every weak shower we are called to turns out to be one restricted component, not a whole house that needs repiping.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "7. A problem at the mains, not in your home"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Occasionally nothing indoors is wrong. Street works, a supplier valve left part-closed, or peak demand on a shared run will all show up as poor pressure. A gauge on the outside tap tells us in minutes which side of the boundary the fault sits on."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Any one of these can account for a weak shower. Two together usually explain a whole house that has quietly lost its pressure over a year or two."
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaTitle": "Why Your Water Pressure Drops, and What Fixes It",
+        "metaDescription": "Why water pressure drops and what fixes it, read on the Pipewise Astro theme. From a half-closed stopcock to a failing valve, seven likely causes."
+      }
+    },
+    {
+      "title": "Five Signs You Need a Plumber, Not a YouTube Video",
+      "slug": "five-signs-you-need-a-plumber-not-a-youtube-video",
+      "image": "blog-five-signs-you-need-a-plumber-not-a-youtube-video",
+      "date": "2025-09-19",
+      "category": "Plumbing Tips",
+      "readTime": "5 min read",
+      "featured": false,
+      "shortDescription": "Some jobs really are a ten minute fix. These five are the ones where a tutorial costs more than a call-out.",
+      "summary": "Plenty of plumbing really is a ten minute job with a spanner and a tutorial. Swapping a washer, clearing a trap, replacing a toilet flapper — all fair game. The problem is that the jobs which look similar from the outside are not similar at all, and a few of them turn a small bill into a very large one the moment you start.",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "1. The shut-off valve will not close fully"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Before any repair, the first test is whether you can actually stop the water. If the isolation valve is seized, weeping or only closes halfway, every job downstream of it becomes a job you cannot undo. That is the point to stop, because the valve itself is now the repair and it needs the mains off to change."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "2. You cannot tell where the water is coming from"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Water travels along joists, under boards and down the outside of pipes before it appears. A damp patch on a ceiling is rarely directly under its source. If you cannot trace it to a fitting you can see and touch, opening up the nearest surface is guesswork — and usually the wrong surface."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "blog-content-rectangle-161125974"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "3. The fix involves a joint you will never see again"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A compression fitting under a sink can be redone in a minute if it weeps. The same fitting buried in a wall cannot. Any joint that is about to be covered by tile, plaster or screed needs to be made by someone whose work you can hold to account, because testing it properly is a skill in itself."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The cost of getting that one joint wrong is not the joint. It is the tiling, the plastering and the drying-out afterwards."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "4. It is a gas appliance"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Anything connected to a gas supply — a combi boiler, a gas water heater, a gas hob being moved for a new sink — is not a DIY job in any circumstance, regardless of how straightforward the plumbing side looks. It is also, in most places, illegal to work on without certification."
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“The question is never whether you can do the repair. It is what happens if it fails at three in the morning while you are asleep upstairs.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "5. You have already fixed it twice"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A repair that needs doing again within a few months was never the real fix. The tap that keeps dripping after two new washers has a damaged seat. The drain that blocks every spring has something structural going on further down the line."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "At that point a third attempt costs more than a diagnosis. Someone with a camera and a pressure gauge will find the actual cause in an hour, and you will have spent less than you did on the parts for attempts one and two."
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaTitle": "Five Signs You Need a Plumber, Not a YouTube Video",
+        "metaDescription": "Five jobs that need a plumber rather than a video, read on the Pipewise Astro theme. Plenty of plumbing is simple, but these five rarely are."
+      }
+    },
+    {
+      "title": "Preparing Your Pipes Before the First Freeze",
+      "slug": "preparing-your-pipes-before-the-first-freeze",
+      "image": "blog-preparing-your-pipes-before-the-first-freeze",
+      "date": "2025-09-17",
+      "category": "Maintenance",
+      "readTime": "5 min read",
+      "featured": false,
+      "shortDescription": "An hour of lagging and draining in autumn is the cheapest insurance against a burst pipe in January.",
+      "summary": "Nothing about a frozen pipe is gradual. It holds, and holds, and then it splits — usually overnight, usually in the part of the house nobody visits in winter. An hour of work in autumn is the cheapest insurance available against a January morning spent moving furniture out of a flooded room.",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "1. Find the pipes that sit in unheated space"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Lofts, garages, crawl spaces, the run behind an external wall and anything under a suspended floor are where pipes freeze first. Walk the house once with a torch before the weather turns and note every length of pipe that is not surrounded by heated air. Those are the ones that need attention; the rest largely look after themselves."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "2. Drain and disconnect the outside taps"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Detach every hose, open the outside tap fully, then close the indoor isolation valve that feeds it and leave the outside tap open over winter. Water trapped between a closed valve and a connected hose has nowhere to expand, and an outside tap is the single most common place a freeze does its damage."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "blog-content-rectangle-161125974"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "3. Lagging only works where it actually covers"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Foam sleeve insulation is inexpensive and effective, but it protects exactly the length of pipe it wraps and nothing more. The gaps people leave — at bends, at valves, where the pipe passes through a joist — are precisely the spots that freeze, because that is where the metal is most exposed."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Cut the sleeves to fit the bends rather than leaving them short, and tape the seams. A continuous run of cheap lagging beats an expensive product fitted with gaps in it."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "4. Let a tap trickle on the coldest nights"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "On the handful of nights each winter when the temperature really drops, open the tap furthest from the stopcock just enough for a steady drip. Moving water is far harder to freeze than still water, and the trickle also relieves the pressure that actually splits the pipe when ice does form."
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“A pipe rarely bursts at the spot where it froze. It bursts between the ice and the closed tap, where the pressure has nowhere left to go.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "5. Know where your stop tap is before you need it"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Find the main shut-off now, check it turns, and make sure everyone in the house knows where it is. A seized stopcock discovered during a burst is a much worse problem than a seized stopcock discovered in October."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "If you are going away over winter, either leave the heating on a low setting or drain the system down properly. An empty house at four degrees for a fortnight is how most serious freeze damage happens."
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaTitle": "Preparing Your Pipes Before the First Freeze",
+        "metaDescription": "Preparing pipes before the first freeze, read on the Pipewise Astro theme. An hour of lagging and draining in autumn is cheap burst-pipe insurance."
+      }
+    },
+    {
+      "title": "Why Your Drain Is Slow: When Jetting Beats Snaking",
+      "slug": "why-your-drain-is-slow-when-jetting-beats-snaking",
+      "image": "blog-why-your-drain-is-slow-when-jetting-beats-snaking",
+      "date": "2025-09-15",
+      "category": "Plumbing Tips",
+      "readTime": "6 min read",
+      "featured": false,
+      "shortDescription": "A snake punches a hole through a blockage. Jetting scours the pipe wall. Here is when each one is the right call.",
+      "summary": "A slow drain has two common cures and they are not interchangeable. A snake punches a hole through whatever is blocking the pipe so water can pass again. Jetting scours the pipe wall back to bare material. Choosing the wrong one means either paying too much for a simple clog or clearing the same blockage every few months.",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "1. What a snake actually does"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A drain snake is a flexible cable that is fed down the line until it reaches the obstruction, then rotated to break through it or hook it out. It is quick, inexpensive and ideal for a single fixture blocked by hair, a wipe or a build-up of soap. What it does not do is remove the material coating the pipe around the hole it just made."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "2. What jetting does differently"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Hydro jetting sends water down the line at high pressure through a nozzle that sprays backwards as well as forwards. That scours grease, scale and sludge off the pipe wall and flushes it away, leaving the full original diameter rather than a channel through the middle of the blockage."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "blog-content-rectangle-161125974"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "3. Grease, roots and scale each need a different answer"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Kitchen lines clogged with cooled fat are the clearest case for jetting — a snake will pass straight through soft grease and leave the walls exactly as coated as they were. Root intrusion usually needs a cutting head first and jetting afterwards to clear the debris."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A single bathroom drain blocked by hair, on the other hand, rarely justifies bringing a jetter to the property at all. Thirty seconds with a snake solves it."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "4. When jetting is the wrong call"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Old clay, cast iron that has corroded thin, or any line with a known crack should be inspected before jetting. The pressure that scours a sound pipe clean can open a weak one up. A plumber who jets an unknown line without looking first is taking a risk with your floor."
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“If the same drain blocks twice in a year, the first clearance did not fail — it was the wrong method for what is actually in the pipe.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "5. Ask for a camera before you choose either one"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A camera survey takes a few minutes and settles the question completely. It shows whether you are looking at a soft blockage, a hard scale layer, roots, a collapsed section or a fall that was laid wrong in the first place."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "That last one matters most, because no amount of snaking or jetting fixes a pipe that does not drain downhill. Knowing which problem you have before paying for a cure is the whole point."
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaTitle": "Why Your Drain Is Slow: When Jetting Beats Snaking",
+        "metaDescription": "Jetting versus snaking for a slow drain, read on the Pipewise Astro theme. A snake punches a hole, jetting scours the wall, and each has its place."
+      }
+    },
+    {
+      "title": "What to Plan For When Repiping a Kitchen Remodel",
+      "slug": "what-to-plan-for-when-repiping-a-kitchen-remodel",
+      "image": "blog-what-to-plan-for-when-repiping-a-kitchen-remodel",
+      "date": "2025-09-13",
+      "category": "Plumbing Tips",
+      "readTime": "8 min read",
+      "featured": false,
+      "shortDescription": "Repiping is far cheaper while the walls are already open. What to decide before the plasterboard goes back on.",
+      "summary": "A kitchen remodel is the cheapest opportunity you will ever get to replace the pipework behind it. The walls are already open, the floor is already up, and the work that would normally cost a fortune in access is suddenly almost free. The decisions that matter all have to be made before the plasterboard goes back on.",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "1. Decide the pipe material before demolition starts"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Copper, PEX and CPVC all behave differently in a kitchen wall, and the choice affects routing, insulation and how the joints are made. Settling it early avoids the mid-job compromise where half the run is one material and half is another, joined by fittings nobody will be able to inspect later."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "2. Map every fixture you might add later"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A pot filler over the hob, a second sink in an island, a filtered tap, an ice maker in the fridge recess — each one needs a supply line. Roughing them in while the wall is open costs a fraction of what it costs to add one afterwards, even if you do not fit the fixture for another two years."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "blog-content-rectangle-161125974"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "3. Shut-off valves are cheap now and expensive later"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Every fixture should get its own isolation valve, positioned somewhere you can actually reach it without emptying a cupboard. It adds very little to the bill during a repipe and it means a future leak affects one tap rather than the whole house."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The same applies to the branch feeding the kitchen as a whole. One accessible valve on that line turns a future repair from a whole-day job with the mains off into an afternoon."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "4. Sequence the trades so nothing gets buried"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Plumbing goes in before electrics where the two compete for the same joist space, and both go in before insulation and boarding. Getting that order wrong is how supply lines end up notched through structural timber or run somewhere the inspector will not sign off."
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“The expensive part of a repipe is never the pipe. It is the plaster, the tiling and the cabinetry you have to take apart to reach it — which is why doing it during a remodel is such good value.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "5. Budget for the inspection, not just the materials"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Most areas require a rough-in inspection before anything is covered up, and a final inspection once the fixtures are connected. Both take time to schedule, and a failed rough-in means the boarding waits."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Build that into the programme from the start. A week of slack in the schedule costs nothing; discovering you need it after the plasterer is booked costs a great deal."
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaTitle": "What to Plan For When Repiping a Kitchen Remodel",
+        "metaDescription": "Planning a kitchen repipe during a remodel, read on the Pipewise Astro theme. Why open walls are the cheapest time to replace ageing pipework."
+      }
+    },
+    {
+      "title": "Is a Plumbing Contract Worth It?",
+      "slug": "is-a-plumbing-contract-worth-it",
+      "image": "blog-is-a-plumbing-contract-worth-it",
+      "date": "2025-09-11",
+      "category": "Maintenance",
+      "readTime": "6 min read",
+      "featured": false,
+      "shortDescription": "What an annual plan actually covers, what it does not, and the number of call-outs where it starts paying for itself.",
+      "summary": "An annual plumbing contract is the sort of thing you sign once and then forget about, which is exactly the point for some households and exactly the problem for others. Whether it earns its keep comes down to the age of your pipework, how many fixtures you have, and how often you have already had to call someone out at short notice.",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "1. What an annual plan actually includes"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Most plans cover one scheduled inspection a year, a water heater flush, a check of every shut-off valve and visible joint, and a discount on labour for anything found during the visit. The inspection is the part that matters — it is where small problems get caught while they are still cheap to fix."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "2. What it almost never covers"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Replacement parts, fixtures and appliances are nearly always billed separately. So is anything behind a wall or under a slab that needs excavation. A plan lowers the cost of getting someone there and diagnosing the problem; it does not turn a failed water heater into a free water heater."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "blog-content-rectangle-161125974"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "3. The break-even point is lower than most people expect"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A plan tends to cover its own cost somewhere around the second call-out of the year, once the waived emergency fee and the labour discount are counted together. If you called a plumber twice last year, the maths already works in your favour."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "If you called nobody at all last year and your plumbing is under ten years old, the plan is buying you an inspection you could book on its own for less. That is a fair trade for some people and a waste for others."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "4. Priority booking is the real benefit"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The part people underrate is where you sit in the queue. On the first freezing weekend of the year, every plumber in the area is booked solid. Contract customers get slotted in first, and on a burst pipe that difference is measured in ruined flooring rather than pounds."
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“Almost nobody reads the exclusions until the day they need them. Ten minutes with the terms before you sign is worth more than the discount on the front of the leaflet.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "5. When you are better off without one"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "New-build homes with modern pipework and a warranty still running rarely need a plan in the first few years. The same goes for a flat with a single bathroom and a combi boiler that the building already services."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Where a plan earns its money is an older property, a house with two or more bathrooms, or anywhere you cannot afford to be without hot water for three days while you wait for an appointment."
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaTitle": "Is a Plumbing Contract Worth It?",
+        "metaDescription": "Whether an annual plumbing contract pays for itself, read on the Pipewise Astro theme. What a plan covers, what it leaves out and when it is worth it."
+      }
+    },
+    {
+      "title": "How Long Should a Water Heater Actually Last?",
+      "slug": "how-long-should-a-water-heater-actually-last",
+      "image": "blog-how-long-should-a-water-heater-actually-last",
+      "date": "2025-09-09",
+      "category": "Water Heating",
+      "readTime": "5 min read",
+      "featured": false,
+      "shortDescription": "Tank, tankless and hard water all change the answer. What to expect and the signs yours is near the end.",
+      "summary": "A dripping faucet or a running toilet is usually a fair DIY project. A parts store and twenty minutes will often solve it. But plumbing problems escalate quickly once water finds a path it should not be taking, and the line between \"fixable this weekend\" and \"call someone now\" is not always obvious.",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "1. Water pressure drops suddenly"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "If you notice a gradual decrease in pressure over several months, it typically indicates mineral buildup. However, a sudden drop in pressure throughout your entire home suggests a more serious problem, such as a hidden leak, a malfunctioning pressure regulator, or a blockage in the main line. Simply tightening a fitting won't resolve these issues."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "2. You smell sewage indoors"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A blocked vent stack or a dried-out trap is usually the culprit behind unpleasant odors. This situation is not just bothersome; exposure to sewer gas poses health risks. Addressing the issue often requires a thorough diagnosis of the vent system rather than just focusing on the fixture closest to the smell."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "blog-content-rectangle-161125974"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "3. Water heater is making noise"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Popping or rumbling sounds usually mean sediment has built up at the bottom of the tank. Left alone, this reduces efficiency and can shorten the unit's life significantly. A flush is a simple fix — but repeated noise after a flush suggests the tank itself is failing."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "If you hear popping or rumbling sounds, it usually means there’s sediment building up at the bottom of the tank. If you ignore it, it can hurt efficiency and even shorten the unit's lifespan. Flushing it out is an easy fix, but if the noise comes back after that, it might mean the tank is on its way out."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "4. Multiple drains are slow at once"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "One slow drain is a local clog. Several slow drains at the same time usually means the problem is further down the line, in a section shared by multiple fixtures. Chemical drain cleaner will not reach it, and repeated dosing can damage older pipe."
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "\"Before you decide to cut into a wall or a slab for repairs, it's wise to seek a second opinion. You might discover alternative solutions that could save you time and money.\""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "5. You have already tried twice"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "If the same repair needs doing again within a few months, the underlying cause was never addressed. That is the clearest sign it is time for a proper diagnosis rather than a third attempt at the same patch."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "If you find yourself needing the same repair again in just a few months, it’s a clear sign that the real issue wasn’t tackled. That’s when you know it’s time to get a proper diagnosis instead of just trying to patch it up again."
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaTitle": "How Long Should a Water Heater Actually Last?",
+        "metaDescription": "How long a water heater really lasts, read on the Pipewise Astro theme. Tank, tankless and hard water all change the answer, as do the warning signs."
+      }
+    }
+  ]
+}

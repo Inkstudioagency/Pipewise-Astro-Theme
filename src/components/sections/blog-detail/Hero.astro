@@ -1,0 +1,53 @@
+---
+import { formatDate, type Blog } from '@/lib/content';
+
+interface Props {
+  blog: Blog;
+}
+
+const { blog } = Astro.props;
+---
+
+<section class="section">
+        <div class="section-gap membership-hero">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="membership-hero-top">
+              <div class="home-hero-left-top post-hero">
+                <div class="hero-badge">
+                  <div class="">{blog.category}</div>
+                </div>
+                <h1 class="inner-hero-heading">{blog.title}</h1>
+                <div class="post-summary-wrap">
+                  <p class="font-regular blog">{blog.shortDescription}</p>
+                </div>
+              </div>
+              <div class="membership-hero-right">
+                <div class="home-hero-button-wrap post">
+                  <div class="post-date-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="date-icon">
+                      <g clip-path="url(#clip0_18261_1839)">
+                        <path d="M8.00065 14.6673C11.6825 14.6673 14.6673 11.6825 14.6673 8.00065C14.6673 4.31875 11.6825 1.33398 8.00065 1.33398C4.31875 1.33398 1.33398 4.31875 1.33398 8.00065C1.33398 11.6825 4.31875 14.6673 8.00065 14.6673Z" stroke="currentColor" stroke-width="1.2"></path>
+                        <path d="M6.33398 6.33398L8.66725 8.66705M10.6673 5.33398L7.33398 8.66732" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_18261_1839">
+                          <rect width="16" height="16" fill="currentColor"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <div class="font-regular is-white medium">{blog.readTime}</div>
+                  </div>
+                  <div class="post-date-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="date-icon">
+                      <path d="M10.6673 1.33398V4.00065M5.33398 1.33398V4.00065" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M14 8.66602V7.99935C14 5.48519 14 4.22812 13.2189 3.44706C12.4379 2.66602 11.1808 2.66602 8.66667 2.66602H7.33333C4.81917 2.66602 3.5621 2.66602 2.78105 3.44706C2 4.22812 2 5.48519 2 7.99935V9.33268C2 11.8468 2 13.1039 2.78105 13.8849C3.5621 14.666 4.81917 14.666 7.33333 14.666" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M2 6.66602H14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M8.66602 12.9993C8.66602 12.9993 9.56502 13.3371 9.99935 14.666C9.99935 14.666 12.117 11.3327 13.9993 10.666" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <div class="font-regular is-white medium">{formatDate(blog.date)}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="membership-hero-media"><img src={blog.image.url} parallax="" class="home-hero-image" alt={blog.image.alt} srcset={blog.image.srcset ?? undefined} sizes={blog.image.srcset ? '100vw' : undefined}></div>
+          </div>
+        </div>
+      </section>

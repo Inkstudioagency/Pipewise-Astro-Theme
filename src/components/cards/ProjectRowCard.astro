@@ -1,0 +1,46 @@
+---
+import type { Project } from '@/lib/content';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+const href = `/projects/${project.slug}`;
+---
+
+<div class="project-card-v1">
+  <a href={href} class="project-row-media-v1 w-inline-block"><img src={project.image.url} loading="lazy" parallax="" class="project-card-image" alt={project.image.alt} srcset={project.image.srcset ?? undefined} sizes={project.image.srcset ? '100vw' : undefined}>
+    <div class="demo">#</div>
+  </a>
+  <div class="project-row-content">
+    <div class="project-row-top">
+      <div class="project-row-head">
+        <div class="project-title row">{project.name}</div>
+        <p class="font-regular">{project.shortDescription}</p>
+      </div>
+      <div class="project-meta-list v1">
+        <div class="project-line"></div>
+        <div class="project-meta-item"><svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="project-meta-icon">
+            <path stroke-linejoin="round" stroke-width="1.2" stroke="currentColor" d="M10.6654 1.99805C12.1381 1.99805 13.332 3.19199 13.332 4.66471C13.332 6.13743 12.1381 7.33138 10.6654 7.33138C10.3286 7.33138 10.0064 7.26905 9.70964 7.15496L8.4707 8.39388L9.16341 9.08659L8.22065 10.0294L7.52794 9.33664L4.47204 12.3925C3.94134 12.9232 3.08112 12.9232 2.55042 12.3925C2.01972 11.8618 2.01972 11.0016 2.55042 10.4709L5.60632 7.41499L4.91361 6.72228L5.85637 5.77952L6.54908 6.47223L7.78801 5.2333C7.67392 4.93653 7.61159 4.61432 7.61159 4.27756C7.61159 2.80484 8.80553 1.61089 10.2783 1.61089L10.6654 1.99805Z"></path>
+          </svg>
+          <p class="font-small">{project.serviceType}</p>
+        </div>
+        <div class="project-line"></div>
+        <div class="project-meta-item"><svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="project-meta-icon">
+            <path stroke-linejoin="round" stroke-width="1.2" stroke="currentColor" d="M2 6.66667L8 2L14 6.66667V13.3333C14 13.7015 13.7015 14 13.3333 14H2.66667C2.29848 14 2 13.7015 2 13.3333V6.66667Z"></path>
+            <path stroke-linejoin="round" stroke-width="1.2" stroke="currentColor" d="M6 14V9H10V14"></path>
+          </svg>
+          <p class="font-small">{project.propertyType}</p>
+        </div>
+        <div class="project-line"></div>
+      </div>
+    </div>
+    <a href={href} data-wf--primary-btn--variant="base" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="base" class="primary-button w-inline-block">
+      <div class="button-text-wrapper">
+        <div class="footer-link-text is-one">View Case Study</div>
+        <div class="footer-link-text is-two">View Case Study</div>
+      </div>
+    </a>
+  </div>
+</div>

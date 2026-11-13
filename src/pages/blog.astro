@@ -1,0 +1,28 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Cta from '@/components/shared/Cta.astro';
+import HeroVideo from '@/components/sections/blog/HeroVideo.astro';
+import HeroOverlay from '@/components/sections/shared/HeroOverlay.astro';
+import Hero from '@/components/sections/blog/Hero.astro';
+import Featured from '@/components/sections/blog/Featured.astro';
+import Latest from '@/components/sections/blog/Latest.astro';
+
+const WF_PAGE = '6ab61aa750050578bb49b8b9';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Blog - Pipewise" description="Plumbing tips, maintenance guides and practical know-how in the Pipewise Astro theme, written to help readers spot problems early and spend less.">
+  <div class="blog-hero">
+    <HeroVideo />
+    <Header id="navbar" />
+    <HeroOverlay />
+    <Hero />
+  </div>
+  <div class="main">
+    <Featured />
+    <Latest />
+    <Cta />
+    <Footer wfPage={WF_PAGE} backToTop="#all-blog" />
+  </div>
+</BaseLayout>

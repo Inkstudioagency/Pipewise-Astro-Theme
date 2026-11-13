@@ -1,0 +1,28 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Cta from '@/components/shared/Cta.astro';
+import HeroVideo from '@/components/sections/service/HeroVideo.astro';
+import HeroOverlay from '@/components/sections/shared/HeroOverlay.astro';
+import Hero from '@/components/sections/service/Hero.astro';
+import ServiceList from '@/components/sections/service/ServiceList.astro';
+import Faq from '@/components/sections/service/Faq.astro';
+
+const WF_PAGE = '6ab52bfe1dae3ca6c0885d44';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Service - Pipewise" description="Every plumbing service in the Pipewise Astro theme, from emergency call-outs and leak detection to water heaters, pipe repair and commercial work.">
+  <div class="service-hero">
+    <HeroVideo />
+    <Header id="navbar" />
+    <HeroOverlay />
+    <Hero />
+  </div>
+  <div class="main">
+    <ServiceList />
+    <Faq />
+    <Cta />
+  </div>
+  <Footer wfPage={WF_PAGE} backToTop="#top" />
+</BaseLayout>

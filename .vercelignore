@@ -1,0 +1,10 @@
+node_modules
+dist
+.astro
+.env
+.env.*
+!.env.example
+strapi/node_modules
+strapi/.tmp
+strapi/.env
+strapi/public/uploads/*

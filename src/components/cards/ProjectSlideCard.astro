@@ -1,0 +1,46 @@
+---
+import type { Project } from '@/lib/content';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+const href = `/projects/${project.slug}`;
+---
+
+<div style={`background-image:url("${project.image.url}")`} class="project-collection-wrap">
+  <div class="project-overlay"></div>
+  <div class="project-content-wrap">
+    <div class="section-badge brand">
+      <div>{project.propertyType}</div>
+    </div>
+    <div class="project-content-block">
+      <div class="project-pill-wrapper">
+        <div class="project-pill"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="project-pill-icon">
+            <path d="M10 17.5C6.46447 17.5 4.6967 17.5 3.59835 16.4017C2.5 15.3033 2.5 13.5355 2.5 10C2.5 6.46447 2.5 4.6967 3.59835 3.59835C4.6967 2.5 6.46447 2.5 10 2.5C13.5355 2.5 15.3033 2.5 16.4017 3.59835C17.5 4.6967 17.5 6.46447 17.5 10" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"></path>
+            <path d="M10 2.5V17.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M17.5008 9.99512H2.50488" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M13.3325 16.3892C13.3325 16.3892 13.9575 16.3892 14.5825 17.5003C14.5825 17.5003 16.5679 14.7226 18.3325 14.167" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <div>{project.serviceType}</div>
+        </div>
+        <div class="project-pill"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="project-pill-icon">
+            <path d="M7.20248 2.62165L5.7818 3.27834C3.59393 4.28965 2.5 4.7953 2.5 5.62533C2.5 6.45535 3.59393 6.961 5.78181 7.97231L7.20248 8.62899C8.57933 9.26541 9.26783 9.58366 10 9.58366C10.7322 9.58366 11.4207 9.26541 12.7975 8.62899L14.2182 7.97231C16.4061 6.961 17.5 6.45535 17.5 5.62533C17.5 4.7953 16.4061 4.28965 14.2182 3.27834L12.7975 2.62165C11.4207 1.98521 10.7322 1.66699 10 1.66699C9.26783 1.66699 8.57933 1.98521 7.20248 2.62165Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M17.3233 9.24805C17.4411 9.41363 17.5 9.5863 17.5 9.77613C17.5 10.5943 16.4061 11.0928 14.2182 12.0897L12.7975 12.737C11.4207 13.3644 10.7322 13.6781 10 13.6781C9.26783 13.6781 8.57933 13.3644 7.20248 12.737L5.78181 12.0897C3.59393 11.0928 2.5 10.5943 2.5 9.77613C2.5 9.5863 2.55889 9.41363 2.67667 9.24805" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M16.9806 13.5547C17.3268 13.8305 17.5 14.1054 17.5 14.4309C17.5 15.2492 16.4061 15.7476 14.2182 16.7445L12.7975 17.3919C11.4207 18.0193 10.7322 18.3329 10 18.3329C9.26783 18.3329 8.57933 18.0193 7.20248 17.3919L5.78181 16.7445C3.59393 15.7476 2.5 15.2492 2.5 14.4309C2.5 14.1054 2.67315 13.8305 3.01945 13.5547" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <div>{project.propertyType}</div>
+        </div>
+      </div>
+      <div class="project-title v1">{project.longTitle}</div>
+      <a href={href} data-wf--primary-btn--variant="bg-white" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="146288cb-5fa7-935b-8753-018ccf99f340" class="primary-button w-variant-146288cb-5fa7-935b-8753-018ccf99f340 w-inline-block">
+        <div class="button-text-wrapper">
+          <div class="footer-link-text is-one">View Case Study</div>
+          <div class="footer-link-text is-two">View Case Study</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="project-overlay-v1"></div>
+</div>

@@ -1,0 +1,105 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service",
+    "description": "Plumbing services: /services/[slug], the service list, the home page sliders and the navigation menu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "number": {
+      "type": "string",
+      "required": true,
+      "maxLength": 3
+    },
+    "shortName": {
+      "type": "string",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "text",
+      "required": true
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "heroHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heroSummary": {
+      "type": "text",
+      "required": true
+    },
+    "promiseImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "promiseTitle": {
+      "type": "string",
+      "required": true
+    },
+    "promiseText": {
+      "type": "text",
+      "required": true
+    },
+    "promisePoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "service.promise-point",
+      "max": 3
+    },
+    "overview": {
+      "type": "blocks"
+    },
+    "overviewImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "overviewQuote": {
+      "type": "text"
+    },
+    "coverageHeading": {
+      "type": "string",
+      "required": true
+    },
+    "coverage": {
+      "type": "component",
+      "repeatable": true,
+      "component": "service.coverage-item",
+      "max": 8
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

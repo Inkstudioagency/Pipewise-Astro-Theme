@@ -1,0 +1,31 @@
+---
+import type { Blog } from '@/lib/content';
+import { formatDate } from '@/lib/content';
+
+interface Props {
+  blog: Blog;
+}
+
+const { blog } = Astro.props;
+const href = `/blogs/${blog.slug}`;
+---
+
+<div to-top-0="" class="blog-card v1">
+  <a href={href} class="blog-image-link-v1 w-inline-block"><img src={blog.image.url} loading="lazy" parallax="" class="blog-card-image-v1" alt={blog.image.alt} srcset={blog.image.srcset ?? undefined} sizes={blog.image.srcset ? '100vw' : undefined}>
+    <div class="demo">#</div>
+  </a>
+  <div class="blog-card-info-wrap">
+    <div class="blog-date-wrap">
+      <div class="font-extra-small brand-color all-caps">Article</div>
+      <div class="font-extra-small brand-color all-caps">.</div>
+      <div class="font-extra-small brand-color all-caps">{formatDate(blog.date)}</div>
+    </div>
+    <a href={href} class="blog-titile-link w-inline-block">
+      <div>{blog.title}</div>
+      <div class="demo">#</div>
+    </a>
+    <div class="blog-summary-wrap">
+      <p class="font-regular">{blog.shortDescription}</p>
+    </div>
+  </div>
+</div>

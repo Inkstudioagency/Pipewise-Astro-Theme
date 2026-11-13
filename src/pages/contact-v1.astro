@@ -1,0 +1,26 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Cta from '@/components/shared/Cta.astro';
+import Hero from '@/components/sections/contact-v1/Hero.astro';
+import RequestForm from '@/components/sections/contact-v1/RequestForm.astro';
+import Location from '@/components/sections/contact-v1/Location.astro';
+import Faq from '@/components/sections/shared/Faq.astro';
+
+const WF_PAGE = '6ab67774a8d44805074d23cb';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Contact V1 - Pipewise" description="The first contact layout in the Pipewise Astro theme — phone, email, office hours and a service request form that is ready to collect enquiries.">
+  <div class="inner-hero-area">
+    <Header variant="v2" id="nav-top" />
+    <Hero />
+  </div>
+  <div class="main">
+    <RequestForm />
+    <Location />
+    <Faq />
+    <Cta />
+  </div>
+  <Footer wfPage={WF_PAGE} backToTop="#nav-top" />
+</BaseLayout>

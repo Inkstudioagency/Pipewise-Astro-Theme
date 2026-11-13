@@ -1,0 +1,41 @@
+---
+import type { Service } from '@/lib/content';
+
+interface Props {
+  service: Service;
+  /** Adds the hidden title link the template has on its second slide */
+  titleLink?: boolean;
+}
+
+const { service, titleLink } = Astro.props;
+const href = `/services/${service.slug}`;
+---
+
+<div class="service-slider-card"><img src={service.mainImage.url} loading="lazy" parallax="" class="service-card-image" alt={service.mainImage.alt} srcset={service.mainImage.srcset ?? undefined} sizes={service.mainImage.srcset ? '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px' : undefined}>
+  <div class="service-info-wrap">
+    <div class="service-card-content-wrap">
+      <div class="service-title-link">{service.name}</div>
+      {titleLink && (
+        <a href={href} class="service-title-link w-inline-block">
+          <div class="demo">#</div>
+        </a>
+      )}
+      <div class="service-summary-wrap">
+        <p class="service-card-summary">{service.shortDescription}</p>
+        <a href={href} class="blog-button white w-inline-block">
+          <div class="blog-button-item home-hero">
+            <div>View Details</div>
+            <div class="button-arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 18 18" fill="none" class="button-arrow">
+                <path d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z" fill="currentColor"></path>
+              </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 18 18" fill="none" class="button-arrow">
+                <path d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z" fill="currentColor"></path>
+              </svg></div>
+          </div>
+          <div class="button-animated-line white"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="service-overlay-01"></div>
+  <div class="service-overlay-02"></div>
+</div>

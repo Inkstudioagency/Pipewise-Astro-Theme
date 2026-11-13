@@ -1,0 +1,38 @@
+---
+import type { Project } from '@/lib/content';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+---
+
+<section class="section project-single">
+        <div class="section-gap project-details-hero">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="w-layout-grid project-hero-grid">
+              <div class="project-hero-left">
+                <div class="home-hero-left-top">
+                  <div class="hero-badge">
+                    <div>Pipewise Membership</div>
+                  </div>
+                  <h1 class="inner-hero-heading">{project.name}</h1>
+                </div>
+                <div class="inner-hero-right">
+                  <p class="inner-hero-summary">{project.shortDescription}</p>
+                  <div class="home-hero-button-wrap v3">
+                    <a href="/contact-v1" data-wf--primary-btn--variant="base" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="base" class="primary-button w-inline-block">
+                      <div class="button-text-wrapper">
+                        <div class="footer-link-text is-one">Book a Service</div>
+                        <div class="footer-link-text is-two">Book a Service</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-hero-right"><img src={project.image.url} loading="lazy" parallax="" class="project-main-image" alt={project.image.alt} srcset={project.image.srcset ?? undefined} sizes={project.image.srcset ? '100vw' : undefined}></div>
+            </div>
+          </div>
+        </div>
+      </section>

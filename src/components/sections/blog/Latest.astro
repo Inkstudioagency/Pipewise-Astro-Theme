@@ -1,0 +1,23 @@
+---
+import DynList from '@/components/cms/DynList.astro';
+import BlogGridCard from '@/components/cards/BlogGridCard.astro';
+import { getBlogsByDate } from '@/lib/content';
+// The three newest articles are shown in the featured row above
+const blogs = (await getBlogsByDate()).slice(3);
+---
+
+<section id="latest-artical" class="section white-100">
+        <div class="section-gap small">
+          <div class="container">
+            <div class="blog-latest-wrap">
+              <div class="section-header area">
+                <div class="section-badge">
+                  <div>Latest Articles</div>
+                </div>
+                <h2 class="section-heading area-v3">Tips, Guides &amp; Plumbing Know-How.</h2>
+              </div>
+              <DynList items={blogs} class="collection-full-wrap" itemsClass="blog-grid">{(blog: any) => <BlogGridCard blog={blog} />}</DynList>
+            </div>
+          </div>
+        </div>
+      </section>

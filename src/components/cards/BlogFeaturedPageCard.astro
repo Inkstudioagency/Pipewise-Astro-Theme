@@ -1,0 +1,41 @@
+---
+import type { Blog } from '@/lib/content';
+
+interface Props {
+  blog: Blog;
+}
+
+const { blog } = Astro.props;
+const href = `/blogs/${blog.slug}`;
+---
+
+<div to-top-0="" class="blog-featured-card page">
+  <a href={href} class="blog-featured-image-wrap page w-inline-block"><img src={blog.image.url} loading="lazy" parallax="" class="blog-featured-image" alt={blog.image.alt} srcset={blog.image.srcset ?? undefined} sizes={blog.image.srcset ? '100vw' : undefined}>
+    <div class="demo">#</div>
+  </a>
+  <div class="blog-featured-content page">
+    <div class="blog-featured-top page">
+      <div class="blog-card-meta">
+        <p class="blog-date">{blog.category}</p>
+        <p class="blog-date">•</p>
+        <p class="blog-date">{blog.readTime}</p>
+      </div>
+      <div class="blog-title page">{blog.title}</div>
+      <p class="font-regular">{blog.shortDescription}</p>
+    </div>
+    <div class="blog-card-foot-v3">
+      <a href={href} class="blog-button w-inline-block">
+        <div class="blog-button-item">
+          <div>Read Article</div>
+        </div>
+        <div class="button-animated-line"></div>
+      </a>
+      <a href={href} class="blog-arrow-circle w-inline-block"><svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="blog-arrow-icon">
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M14 5.5L20.5 12L14 18.5"></path>
+          <path stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M20 12H3.5"></path>
+        </svg>
+        <div class="demo">#</div>
+      </a>
+    </div>
+  </div>
+</div>

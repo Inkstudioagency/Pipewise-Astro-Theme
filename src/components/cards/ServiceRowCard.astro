@@ -1,0 +1,41 @@
+---
+import type { Service } from '@/lib/content';
+
+interface Props {
+  service: Service;
+  /** Position in the list (shown as "01.") */
+  index: number;
+  /** First (open) row */
+  active?: boolean;
+}
+
+const { service, index, active } = Astro.props;
+const href = `/services/${service.slug}`;
+---
+
+<div class="service-row-v3">
+  <div class="service-row-inner-v3">
+    <div class="service-row-content-v3">
+      <div class="service-row-title-v3">
+        <div class="service-row-number-v3">{String(index + 1).padStart(2, '0')}.</div>
+        <div>{service.name}</div>
+      </div>
+      <div class="service-row-desc-v3">
+        <p class="font-regular max-width-29">{service.shortDescription}</p>
+        <div class:list={['service-button-wrapper', { active }]}>
+          <a href={href} class="blog-button service w-inline-block">
+            <div class="blog-button-item">
+              <div>View Details </div>
+              <div class="button-arrow-wrap"><svg fill="none" viewBox="0 0 18 18" width="100%" xmlns="http://www.w3.org/2000/svg" class="button-arrow">
+                  <path fill="currentColor" d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z"></path>
+                </svg><svg fill="none" viewBox="0 0 18 18" width="100%" xmlns="http://www.w3.org/2000/svg" class="button-arrow">
+                  <path fill="currentColor" d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z"></path>
+                </svg></div>
+            </div>
+            <div class="button-animated-line"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div><img src={service.mainImage.url} class:list={['service-row-image-v3', { active }]} alt={service.mainImage.alt} srcset={service.mainImage.srcset ?? undefined} sizes={service.mainImage.srcset ? '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px' : undefined}>
+</div>

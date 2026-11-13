@@ -1,0 +1,37 @@
+---
+import DynList from '@/components/cms/DynList.astro';
+import BlogCardV1 from '@/components/cards/BlogCardV1.astro';
+import { getBlogs } from '@/lib/content';
+const blogs = (await getBlogs()).slice(0, 2);
+---
+
+<section class="section body-color">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="blog-header v1">
+              <div class="section-header blog">
+                <div class="section-badge">
+                  <div>Plumbing Insights</div>
+                </div>
+                <div class="max-width-37">
+                  <h2 class="section-heading">Helpful Tips for a Healthier Home.</h2>
+                </div>
+              </div>
+              <a href="/blog" to-top-2="" class="blog-button w-inline-block">
+                <div class="blog-button-item home-hero">
+                  <div>All Articles</div>
+                  <div class="button-arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 18 18" fill="none" class="button-arrow">
+                      <path d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z" fill="currentColor"></path>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 18 18" fill="none" class="button-arrow">
+                      <path d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z" fill="currentColor"></path>
+                    </svg></div>
+                </div>
+                <div class="button-animated-line"></div>
+              </a>
+            </div>
+            <div class="blog-collection-wrap">
+              <DynList items={blogs} itemsClass="blog-collection-list-v1">{(blog: any) => <BlogCardV1 blog={blog} />}</DynList>
+            </div>
+          </div>
+        </div>
+      </section>

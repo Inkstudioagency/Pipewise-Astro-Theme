@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+
+# environment (secrets)
+.env
+.env.*
+!.env.example
+
+# SQLite database and caches
+.tmp/
+.cache/
+.strapi/
+.strapi-updater.json
+
+# build output
+build/
+dist/
+
+# uploaded media (the demo media lives in data/uploads and is imported by `npm run seed`)
+public/uploads/*
+!public/uploads/.gitkeep
+
+# logs
+*.log

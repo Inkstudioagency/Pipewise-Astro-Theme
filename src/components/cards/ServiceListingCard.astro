@@ -1,0 +1,35 @@
+---
+import type { Service } from '@/lib/content';
+
+interface Props {
+  service: Service;
+  /** Position on the page (shown as "01") */
+  index: number;
+}
+
+const { service, index } = Astro.props;
+const href = `/services/${service.slug}`;
+// The template animates the image link of its fourth card as well
+const linkParallax = index === 3 ? { parallax: '' } : {};
+---
+
+<div class="service-card listing">
+  <a {...linkParallax} href={href} class="service-card-image-wrap w-inline-block"><img src={service.mainImage.url} parallax="" class="service-card-image listing" alt={service.mainImage.alt} srcset={service.mainImage.srcset ?? undefined} sizes={service.mainImage.srcset ? '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px' : undefined}>
+    <div class="demo">#</div>
+  </a>
+  <div class="service-card-item listing">
+    <div class="service-card-top listing">
+      <p class="service-card-title listing">{String(index + 1).padStart(2, '0')}</p>
+      <div class="service-card-content-wrap listing">
+        <p class="service-card-title listing">{service.name}</p>
+        <p class="service-card-summary listing">{service.shortDescription}</p>
+      </div>
+    </div>
+    <a href={href} data-wf--primary-btn--variant="base" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="base" class="primary-button w-inline-block">
+      <div class="button-text-wrapper">
+        <div class="footer-link-text is-one">Service details</div>
+        <div class="footer-link-text is-two">Service details</div>
+      </div>
+    </a>
+  </div>
+</div>

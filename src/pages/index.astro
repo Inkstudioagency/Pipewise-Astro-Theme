@@ -1,0 +1,44 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Cta from '@/components/shared/Cta.astro';
+import HeroVideo from '@/components/sections/home/HeroVideo.astro';
+import HeroOverlay from '@/components/sections/shared/HeroOverlay.astro';
+import Hero from '@/components/sections/home/Hero.astro';
+import About from '@/components/sections/home/About.astro';
+import Services from '@/components/sections/home/Services.astro';
+import WhyChooseUs from '@/components/sections/home/WhyChooseUs.astro';
+import HowItWorks from '@/components/sections/home/HowItWorks.astro';
+import Projects from '@/components/sections/home/Projects.astro';
+import Membership from '@/components/sections/home/Membership.astro';
+import ServiceArea from '@/components/sections/home/ServiceArea.astro';
+import Testimonials from '@/components/sections/home/Testimonials.astro';
+import Blog from '@/components/sections/home/Blog.astro';
+import RequestForm from '@/components/sections/home/RequestForm.astro';
+
+const WF_PAGE = '6ab21d1467875e4895e71fdb';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Pipewise - Plumbing Astro Theme" description="Pipewise is a clean Astro theme for plumbing companies, with emergency call-outs, service pages, project case studies and a booking-ready contact form.">
+  <div class="home-hero-area">
+    <HeroVideo />
+    <Header id="navbar" />
+    <HeroOverlay />
+    <Hero />
+  </div>
+  <div class="main">
+    <About />
+    <Services />
+    <WhyChooseUs />
+    <HowItWorks />
+    <Projects />
+    <Membership />
+    <ServiceArea />
+    <Testimonials />
+    <Blog />
+    <RequestForm />
+    <Cta />
+  </div>
+  <Footer wfPage={WF_PAGE} backToTop="#top" />
+</BaseLayout>

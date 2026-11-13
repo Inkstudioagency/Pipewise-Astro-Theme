@@ -1,0 +1,31 @@
+---
+import RichText from '@/components/RichText.astro';
+import type { Service } from '@/lib/content';
+
+interface Props {
+  service: Service;
+}
+
+const { service } = Astro.props;
+---
+
+<section class="section">
+        <div class="section-gap">
+          <div class="container">
+            <div class="overview-grid">
+              <div class="overview-left">
+                <div to-top-0="" class="section-badge">
+                  <div>Why Choose Pipewise</div>
+                </div>
+                <RichText to-top-0="" class="service-details-overview" blocks={service.overview} />
+              </div>
+              <div to-top-2="" class="overview-right">
+                <div class="overview-media"><img src={service.overviewImage.url} class="home-hero-image-v2" alt={service.overviewImage.alt} srcset={service.overviewImage.srcset ?? undefined}></div>
+                <div class="overview-quote-card">
+                  <p class="overview-quote">{service.overviewQuote}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

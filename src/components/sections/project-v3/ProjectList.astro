@@ -1,0 +1,38 @@
+---
+import DynList from '@/components/cms/DynList.astro';
+import ProjectWideCard from '@/components/cards/ProjectWideCard.astro';
+import { getProjects } from '@/lib/content';
+const projects = await getProjects();
+---
+
+<section class="section white-100">
+        <div class="section-gap project-v3">
+          <div class="container">
+            <div class="project-hero-v3">
+              <div class="project-hero-header">
+                <div class="hero-badge text-black-rock">
+                  <div>Our Work</div>
+                </div>
+                <h1 class="inner-hero-heading black-rock">Easily tackle plumbing problems with these simple solutions!</h1>
+              </div>
+              <div class="inner-hero-button-wrap">
+                <a href="/contact-v1" data-wf--primary-btn--variant="base" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="base" class="primary-button w-inline-block">
+                  <div class="button-text-wrapper">
+                    <div class="footer-link-text is-one">Schedule Online</div>
+                    <div class="footer-link-text is-two">Schedule Online</div>
+                  </div>
+                </a>
+                <a href="/contact-v1" data-wf--primary-btn--variant="white-with-border" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="5a3e0821-da42-65c8-ec97-3fec66aa40f6" class="primary-button w-variant-5a3e0821-da42-65c8-ec97-3fec66aa40f6 w-inline-block">
+                  <div class="button-text-wrapper">
+                    <div class="footer-link-text is-one">Choose Your Plan</div>
+                    <div class="footer-link-text is-two">Choose Your Plan</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="project-wrapper-v3">
+              <DynList items={projects} class="collection-full-wrap" itemsClass="project-list-v3" itemClass="project-collection-item">{(project: any) => <ProjectWideCard project={project} />}</DynList>
+            </div>
+          </div>
+        </div>
+      </section>

@@ -1,0 +1,60 @@
+---
+import DynList from '@/components/cms/DynList.astro';
+import ServiceSlideCard from '@/components/cards/ServiceSlideCard.astro';
+import { getServices } from '@/lib/content';
+const services = await getServices();
+---
+
+<section class="section brand-color">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="section-header">
+              <div class="section-badge">
+                <div>What We Do</div>
+              </div>
+              <div class="max-width-37">
+                <h2 class="section-heading center">Plumbing services tailored to you.</h2>
+              </div>
+            </div>
+            <div to-top-0="" class="service-slider-wrap">
+              <div data-delay="4000" data-animation="slide" class="service-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                <div class="service-slider-mask w-slider-mask">
+                  <div class="service-slide w-slide">
+                    <DynList items={services.slice(0, 1)}>{(service: any) => <ServiceSlideCard service={service} />}</DynList>
+                  </div>
+                  <div class="service-slide w-slide">
+                    <DynList items={services.slice(1, 2)}>{(service: any) => <ServiceSlideCard service={service} titleLink />}</DynList>
+                  </div>
+                  <div class="service-slide w-slide">
+                    <DynList items={services.slice(2, 3)}>{(service: any) => <ServiceSlideCard service={service} />}</DynList>
+                  </div>
+                  <div class="service-slide w-slide">
+                    <DynList items={services.slice(3, 4)}>{(service: any) => <ServiceSlideCard service={service} />}</DynList>
+                  </div>
+                  <div class="service-slide w-slide">
+                    <DynList items={services.slice(4, 5)}>{(service: any) => <ServiceSlideCard service={service} />}</DynList>
+                  </div>
+                  <div class="service-slide w-slide">
+                    <DynList items={services.slice(5, 6)}>{(service: any) => <ServiceSlideCard service={service} />}</DynList>
+                  </div>
+                </div>
+                <div class="service-slider-button left w-slider-arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="slider-arrow">
+                    <path d="M10.3385 17.9011C10.3385 17.9011 5.04862 13.3787 5.04858 11.9969C5.04861 10.6151 10.3386 6.09284 10.3386 6.09284M5.63604 11.9969L19.7782 11.9969" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></div>
+                <div class="service-slider-button w-slider-arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="slider-arrow">
+                    <path d="M13.6615 6.09504C13.6615 6.09504 18.9514 10.6174 18.9514 11.9992C18.9514 13.381 13.6614 17.9033 13.6614 17.9033M18.364 11.9992L4.22183 11.9992" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></div>
+                <div class="hide w-slider-nav w-round w-num"></div>
+              </div>
+              <div to-top-0="" class="service-button-wrap">
+                <a href="/service" data-wf--primary-btn--variant="bg-white" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="146288cb-5fa7-935b-8753-018ccf99f340" class="primary-button w-variant-146288cb-5fa7-935b-8753-018ccf99f340 w-inline-block">
+                  <div class="button-text-wrapper">
+                    <div class="footer-link-text is-one">View All Services</div>
+                    <div class="footer-link-text is-two">View All Services</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

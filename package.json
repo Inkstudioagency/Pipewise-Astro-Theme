@@ -1,0 +1,34 @@
+{
+  "name": "pipewise-astro",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Pipewise - plumbing company theme for Astro with Strapi CMS",
+  "author": "Ink Studio",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "astro": "astro",
+    "cms:install": "npm --prefix strapi install",
+    "cms:dev": "npm --prefix strapi run develop",
+    "cms:seed": "npm --prefix strapi run seed",
+    "cms:build": "npm --prefix strapi run build",
+    "cms:start": "npm --prefix strapi run start"
+  },
+  "dependencies": {
+    "astro": "^7.4.11",
+    "gsap": "3.15.0",
+    "lenis": "1.3.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@types/node": "^26.6.6",
+    "typescript": "^6.0.3"
+  }
+}

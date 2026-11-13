@@ -1,0 +1,24 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Cta from '@/components/shared/Cta.astro';
+import Hero from '@/components/sections/contact-v3/Hero.astro';
+import RequestForm from '@/components/sections/contact-v3/RequestForm.astro';
+import Faq from '@/components/sections/contact-v3/Faq.astro';
+
+const WF_PAGE = '6ab689f3d9155763628337f3';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Contact V3 - Pipewise" description="The third contact layout in the Pipewise Astro theme, combining a compact enquiry form with a full FAQ for the questions customers ask most.">
+  <div class="inner-hero-area">
+    <Header id="navbar" />
+    <Hero />
+  </div>
+  <div class="main">
+    <RequestForm />
+    <Faq />
+    <Cta />
+  </div>
+  <Footer wfPage={WF_PAGE} backToTop="#navbar" />
+</BaseLayout>

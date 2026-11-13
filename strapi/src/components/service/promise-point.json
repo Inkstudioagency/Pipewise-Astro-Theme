@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_service_promise_points",
+  "info": {
+    "displayName": "Promise point",
+    "icon": "star",
+    "description": "One line of the guarantee list on a service page"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

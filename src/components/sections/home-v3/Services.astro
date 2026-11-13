@@ -1,0 +1,45 @@
+---
+import DynList from '@/components/cms/DynList.astro';
+import ServiceRowCard from '@/components/cards/ServiceRowCard.astro';
+import { getServices } from '@/lib/content';
+const services = await getServices();
+---
+
+<section class="section white-100">
+        <div class="section-gap small-bottom">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="service-header-top v3">
+              <div class="section-header service-v3">
+                <div class="section-badge">
+                  <div>What We Do</div>
+                </div>
+                <div class="max-width-37">
+                  <h2 class="section-heading">Plumbing services tailored to you.</h2>
+                </div>
+              </div>
+              <div to-top-0="">
+                <a href="/service" data-wf--primary-btn--variant="base" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="base" class="primary-button w-inline-block">
+                  <div class="button-text-wrapper">
+                    <div class="footer-link-text is-one">View All Services</div>
+                    <div class="footer-link-text is-two">View All Services</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div to-top-0="" class="service-list-v3">
+              <div to-top-0="" class="service-card-wrap active">
+                <DynList items={services.slice(0, 1)}>{(service: any) => <ServiceRowCard service={service} index={0} active />}</DynList>
+              </div>
+              <div class="service-card-wrap">
+                <DynList items={services.slice(1, 2)}>{(service: any) => <ServiceRowCard service={service} index={1} />}</DynList>
+              </div>
+              <div class="service-card-wrap">
+                <DynList items={services.slice(2, 3)}>{(service: any) => <ServiceRowCard service={service} index={2} />}</DynList>
+              </div>
+              <div class="service-card-wrap">
+                <DynList items={services.slice(3, 4)}>{(service: any) => <ServiceRowCard service={service} index={3} />}</DynList>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

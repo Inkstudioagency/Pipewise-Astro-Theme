@@ -1,0 +1,39 @@
+---
+import DynList from '@/components/cms/DynList.astro';
+import RelatedServiceCard from '@/components/cards/RelatedServiceCard.astro';
+import { getRelatedServices } from '@/lib/content';
+interface Props {
+  /** Slug of the current service (left out of the list) */
+  slug: string;
+}
+
+const services = await getRelatedServices(Astro.props.slug);
+---
+
+<section class="section">
+        <div class="section-gap">
+          <div class="container">
+            <div class="related-wrap">
+              <div class="releted-service-header">
+                <div class="section-header releted-service">
+                  <h2 class="section-heading">Related services</h2>
+                </div>
+                <div to-top-0="">
+                  <a href="/service" data-wf--primary-btn--variant="base" data-wf-component-id="28b9e61e-764f-3ea9-2ebf-6915a5c8abb2" data-wf-variant-state="base" class="primary-button w-inline-block">
+                    <div class="button-text-wrapper">
+                      <div class="footer-link-text is-one">Browse all services</div>
+                      <div class="footer-link-text is-two">Browse all services</div>
+                    </div>
+                    <div class="arrow-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="pricng-arrow">
+                        <path d="M13.6615 6.09504C13.6615 6.09504 18.9514 10.6174 18.9514 11.9992C18.9514 13.381 13.6614 17.9033 13.6614 17.9033M18.364 11.9992L4.22183 11.9992" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="pricng-arrow">
+                        <path d="M13.6615 6.09504C13.6615 6.09504 18.9514 10.6174 18.9514 11.9992C18.9514 13.381 13.6614 17.9033 13.6614 17.9033M18.364 11.9992L4.22183 11.9992" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </a>
+                </div>
+              </div>
+              <DynList items={services} itemsClass="service-cards-list related">{(service: any) => <RelatedServiceCard service={service} />}</DynList>
+            </div>
+          </div>
+        </div>
+      </section>

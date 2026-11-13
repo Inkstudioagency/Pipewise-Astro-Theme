@@ -1,0 +1,30 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Cta from '@/components/shared/Cta.astro';
+import Hero from '@/components/sections/membership/Hero.astro';
+import Plans from '@/components/sections/membership/Plans.astro';
+import Benefits from '@/components/sections/membership/Benefits.astro';
+import Compare from '@/components/sections/membership/Compare.astro';
+import Inspection from '@/components/sections/membership/Inspection.astro';
+import Faq from '@/components/sections/membership/Faq.astro';
+
+const WF_PAGE = '6ab52cf63eaec9c5411bb3ab';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Membership - Pipewise" description="Compare the Care and Care+ plans in the Pipewise Astro theme — annual inspections, priority booking, member pricing and a workmanship guarantee.">
+  <div class="inner-hero-area">
+    <Header id="navbar" />
+    <Hero />
+  </div>
+  <div class="main">
+    <Plans />
+    <Benefits />
+    <Compare />
+    <Inspection />
+    <Faq />
+    <Cta />
+  </div>
+  <Footer wfPage={WF_PAGE} backToTop="#navbar" />
+</BaseLayout>

@@ -1,0 +1,14 @@
+---
+import DynList from '@/components/cms/DynList.astro';
+import ProjectGridCard from '@/components/cards/ProjectGridCard.astro';
+import { getProjects } from '@/lib/content';
+const projects = await getProjects();
+---
+
+<section class="section white-100">
+        <div class="section-gap project-grid">
+          <div class="container">
+            <DynList items={projects} class="collection-full-wrap" itemsClass="project-grid-v2">{(project: any) => <ProjectGridCard project={project} />}</DynList>
+          </div>
+        </div>
+      </section>

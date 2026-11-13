@@ -1,0 +1,24 @@
+---
+import DynList from '@/components/cms/DynList.astro';
+import BlogFeaturedPageCard from '@/components/cards/BlogFeaturedPageCard.astro';
+import BlogSideCard from '@/components/cards/BlogSideCard.astro';
+import { getBlogsByDate, getFeaturedBlog } from '@/lib/content';
+const featured = await getFeaturedBlog();
+const side = (await getBlogsByDate()).slice(0, 3);
+---
+
+<section id="all-blog" class="section white-50">
+        <div class="section-gap">
+          <div class="container">
+            <div class="blog-featured-wrap">
+              <div class="section-header left">
+                <h2 class="section-heading blog-v3">Featured Article</h2>
+              </div>
+              <div class="blog-featured-row">
+                <DynList items={featured ? [featured] : []} class="blog-featured-col">{(blog: any) => <BlogFeaturedPageCard blog={blog} />}</DynList>
+                <DynList items={side} class="blog-side-col" itemsClass="blog-side-list">{(blog: any) => <BlogSideCard blog={blog} />}</DynList>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

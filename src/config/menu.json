@@ -1,0 +1,63 @@
+{
+  "main": [
+    { "name": "Home", "url": "/" },
+    { "name": "Services", "url": "/service" },
+    { "name": "Membership", "url": "/membership" },
+    { "name": "Areas", "url": "/service-area" }
+  ],
+  "pages": {
+    "main": [
+      { "name": "Home V1", "url": "/" },
+      { "name": "Home V2", "url": "/home-v2" },
+      { "name": "Home V3", "url": "/home-v3" },
+      { "name": "Project V1", "url": "/project-v1" },
+      { "name": "Project V2", "url": "/project-v2" },
+      { "name": "Project V3", "url": "/project-v3" }
+    ],
+    "single": [
+      { "name": "About", "url": "/about-us" },
+      { "name": "Blog", "url": "/blog" },
+      { "name": "Contact V1", "url": "/contact-v1" },
+      { "name": "Contact V2", "url": "/contact-v2" },
+      { "name": "Contact V3", "url": "/contact-v3" }
+    ],
+    "utility": [{ "name": "404", "url": "/404" }]
+  },
+  "footer": [
+    {
+      "title": "Navigation",
+      "links": [
+        { "name": "Home", "url": "/" },
+        { "name": "About", "url": "/about-us" },
+        { "name": "Services", "url": "/service" },
+        { "name": "Project", "url": "/project-v1" },
+        { "name": "Blog", "url": "/blog" }
+      ]
+    },
+    {
+      "title": "Single Page",
+      "links": [
+        { "name": "Service Details", "url": "$latest-service" },
+        { "name": "Blog Details", "url": "$latest-blog" },
+        { "name": "Project Details", "url": "$latest-project" },
+        { "name": "Contact", "url": "/contact-v1" }
+      ]
+    },
+    {
+      "title": "Utility page",
+      "links": [{ "name": "404", "url": "/404" }]
+    },
+    {
+      "title": "Navigation",
+      "links": [
+        { "name": "(555) 014-2200", "url": "tel:(555)014-2200" },
+        { "name": "hello@example.com", "url": "mailto:hello@example.com" },
+        {
+          "name": "128 Foundry Street, Midtown",
+          "url": "https://www.google.com/maps/search/128+Foundry+Street,+Midtown/@42.4983741,-71.0756818,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D",
+          "external": true
+        }
+      ]
+    }
+  ]
+}

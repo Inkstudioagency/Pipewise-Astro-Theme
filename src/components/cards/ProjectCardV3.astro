@@ -1,0 +1,33 @@
+---
+import type { Project } from '@/lib/content';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+const href = `/projects/${project.slug}`;
+---
+
+<div class="project-card-v2"><img src={project.image.url} class="project-card-image-main" alt={project.image.alt} srcset={project.image.srcset ?? undefined} sizes={project.image.srcset ? '(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939px' : undefined}>
+  <div class="project-info-wrap-v2">
+    <p class="project-badge v3">{project.propertyType}</p>
+    <div class="project-info-block">
+      <div class="project-content-block v3">
+        <div class="font-medium white">{project.name}</div>
+        <p class="font-regular white-80">{project.shortDescription}</p>
+      </div>
+      <a href={href} class="blog-button white w-inline-block">
+        <div class="blog-button-item">
+          <div>View Case Study</div>
+          <div class="button-arrow-wrap"><svg fill="none" viewBox="0 0 18 18" width="100%" xmlns="http://www.w3.org/2000/svg" class="button-arrow">
+              <path fill="currentColor" d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z"></path>
+            </svg><svg fill="none" viewBox="0 0 18 18" width="100%" xmlns="http://www.w3.org/2000/svg" class="button-arrow">
+              <path fill="currentColor" d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z"></path>
+            </svg></div>
+        </div>
+        <div class="button-animated-line white"></div>
+      </a>
+    </div>
+  </div>
+</div>

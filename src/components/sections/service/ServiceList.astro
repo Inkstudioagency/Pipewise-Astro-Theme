@@ -1,0 +1,63 @@
+---
+/**
+ * Service list with a sticky sidebar of anchor links. The order comes from
+ * `collections.services_page_order` in src/config/config.json.
+ */
+import DynList from '@/components/cms/DynList.astro';
+import ServiceListingCard from '@/components/cards/ServiceListingCard.astro';
+import { getServicesPageOrder, serviceAnchor } from '@/lib/content';
+
+const services = await getServicesPageOrder();
+---
+
+<section id="top" class="section body-color">
+  <div class="section-gap">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="service-page-grid">
+        <div class="service-sidebar">
+          <div class="section-header service">
+            <div class="section-badge">
+              <div>What We Do</div>
+            </div>
+            <h2 class="section-heading blog-v3">Plumbing services built around your needs</h2>
+          </div>
+          <div to-top-0="" class="sidebar-list">
+            {services.map((service) => (
+              <a href={`#${serviceAnchor(service)}`} class="service-sidebar-link w-inline-block">
+                <div class="service-link-item-wrap">
+                  <div class="squre-dot"></div>
+                  <div>{service.name}</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="service-arrow">
+                    <g clip-path="url(#clip0_18238_10927)">
+                      <path d="M14.7139 5.28516L5.28578 14.7132" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M14.7139 5.28516V12.3562" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M14.7142 5.28553H7.64318" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_18238_10927">
+                        <rect width="20" height="20" fill="currentColor"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+        <div class="service-right">
+          {services.map((service, index) => (
+            <div id={serviceAnchor(service)} to-top-0="" class="service-collection-wrap">
+              <DynList items={[service]} itemsClass="service-cards-list">
+                {() => <ServiceListingCard service={service} index={index} />}
+              </DynList>
+            </div>
+          ))}
+          {services.length === 0 && (
+            <div class="w-dyn-empty">
+              <div>No items found.</div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

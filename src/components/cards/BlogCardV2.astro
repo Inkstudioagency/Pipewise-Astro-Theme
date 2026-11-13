@@ -1,0 +1,33 @@
+---
+import type { Blog } from '@/lib/content';
+import { formatDate } from '@/lib/content';
+
+interface Props {
+  blog: Blog;
+}
+
+const { blog } = Astro.props;
+const href = `/blogs/${blog.slug}`;
+---
+
+<div to-top-0="" class="blog-card-v2">
+  <div class="blog-card-top">
+    <div class="blog-card-meta">
+      <div class="blog-date">{blog.category}</div>
+      <div class="blog-date">·</div>
+      <div class="blog-date">{formatDate(blog.date)}</div>
+    </div>
+    <div class="blog-card-title">{blog.title}</div>
+  </div>
+  <a href={href} class="blog-button w-inline-block">
+    <div class="blog-button-item">
+      <div>Read Article</div>
+      <div class="button-arrow-wrap"><svg fill="none" viewBox="0 0 18 18" width="100%" xmlns="http://www.w3.org/2000/svg" class="button-arrow">
+          <path fill="currentColor" d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z"></path>
+        </svg><svg fill="none" viewBox="0 0 18 18" width="100%" xmlns="http://www.w3.org/2000/svg" class="button-arrow">
+          <path fill="currentColor" d="M10.5 3.69727L9.375 4.82227L12.8027 8.25H2.25V9.75H12.8027L9.375 13.1777L10.5 14.3027L15.8027 9L10.5 3.69727Z"></path>
+        </svg></div>
+    </div>
+    <div class="button-animated-line"></div>
+  </a>
+</div>

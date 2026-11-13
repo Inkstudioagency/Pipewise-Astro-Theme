@@ -1,0 +1,39 @@
+---
+/**
+ * Collection list wrapper with Webflow's markup (`w-dyn-list` > `w-dyn-items` > `w-dyn-item`),
+ * so the template styles and interactions apply unchanged. Each item is rendered by the
+ * child function: <DynList items={services}>{(service) => <Card service={service} />}</DynList>
+ * Without items it shows the template's empty state.
+ */
+interface Props {
+  items: unknown[];
+  /** Extra classes of the list wrapper (`w-dyn-list`) */
+  class?: string;
+  /** Extra classes of the items wrapper (`w-dyn-items`) */
+  itemsClass?: string;
+  /** Extra classes of each item (`w-dyn-item`) */
+  itemClass?: string;
+}
+
+const { items, class: listClass, itemsClass, itemClass } = Astro.props;
+const join = (extra: string | undefined, base: string) => (extra ? `${extra} ${base}` : base);
+const rendered = await Promise.all(items.map((item, index) => Astro.slots.render('default', [item, index])));
+---
+
+<div class={join(listClass, 'w-dyn-list')}>
+  {
+    items.length > 0 ? (
+      <div role="list" class={join(itemsClass, 'w-dyn-items')}>
+        {rendered.map((html) => (
+          <div role="listitem" class={join(itemClass, 'w-dyn-item')}>
+            <Fragment set:html={html} />
+          </div>
+        ))}
+      </div>
+    ) : (
+      <div class="w-dyn-empty">
+        <div>No items found.</div>
+      </div>
+    )
+  }
+</div>
